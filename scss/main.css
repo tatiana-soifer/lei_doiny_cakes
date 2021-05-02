@@ -162,6 +162,8 @@ header {
 
 #formulario h2 {
   font-size: 52px !important;
+  text-align: end;
+  padding-right: 5%;
 }
 
 #formulario .form-control {
@@ -230,7 +232,14 @@ header {
   font-size: 23px;
 }
 
-.cuadricula_productos {
+.menu_productos li {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 35px 0;
+  text-align: center;
+}
+
+.cuadricula_tortas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,20 +247,45 @@ header {
       flex-wrap: wrap;
 }
 
-.cuadricula_productos .card {
+.cuadricula_tortas .card {
   border-radius: 17px 17px 17px 17px !important;
 }
 
-.cuadricula_productos .card-body {
+.cuadricula_tortas .card-body {
   background-color: #F3D6E1;
   border-radius: 0px 0px 17px 17px;
 }
 
-.cuadricula_productos .card-body button {
+.cuadricula_tortas .card-body button {
   float: right;
 }
 
-.cuadricula_productos .card_show img {
+.cuadricula_tortas .card_show img {
+  border-radius: 17px 17px 0px 0px;
+}
+
+.cuadricula_desayunos_meriendas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cuadricula_desayunos_meriendas .card {
+  border-radius: 17px 17px 17px 17px !important;
+}
+
+.cuadricula_desayunos_meriendas .card-body {
+  background-color: #F3D6E1;
+  border-radius: 0px 0px 17px 17px;
+}
+
+.cuadricula_desayunos_meriendas .card-body button {
+  float: right;
+}
+
+.cuadricula_desayunos_meriendas .card_show img {
   border-radius: 17px 17px 0px 0px;
 }
 
