@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Pastelería diferente por Lei Doiny, cocinera y pastelera apasionada por lo que hace. Tortas especiales, y a pedido, cosas ricas, recetas, y catering para eventos.">
+        <meta name="keywords" content="comida, recetas, tortas, eventos">
+        <!--RESPONSIVE-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--BOOTSTRAP-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!--ESTILOS-->
+        <link rel="stylesheet" href="scss/main.css">
+        <!--TITULO-->
+        <title>LEI DOINY CAKES</title>
+    </head>
+    <body id="fondo">
+        <header>
+            <div class="container-fluid barra">
+                <div class="row">
+                    <!--LOGO-->
+                    <img src="img/logo.png" alt="logo" id="logo">
+                    <!--MENU-->
+                    <nav class="navbar navbar-expand-lg sticky-top bg-light ml-auto">
+                        <button class="navbar-toggler" id="borde_boton" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="navbar-brand" href="#menu">Menú</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="navbar-brand" href="#como_comprar">Cómo comprar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="navbar-brand" href="#formulario" >Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="navbar-brand" href="#FAQ" >FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                                        <img src="img/carrito.png" alt="carrito de compras">
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+        <!--PRESENTACION-->
+        <div class="presentacion">
+            <h1>Disfrutá increibles tortas artesanales</h1>
+            <p class="p_presentacion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button class="b_presentacion btn">Ver más</button>
+        </div>
+
+        <div id="fondo_degrade">
+            <!--COMO COMPRRAR-->
+            <div class="como_comprar" name="como_comprar">
+                <h2>Cómo comprar</h2>
+                <div class="grid_como_comprar">
+                    <div class="tortas">
+                        <img src="img/torta.png" alt="torta">
+                        <h3>Elegí</h3>
+                        <h4>Explorá nuestro menú y elegí tus tortas preferidas</h4>
+                    </div>
+                    <div class="tarjetas">
+                        <img src="img/tarjetas.png" alt="metodo de pago">
+                        <h3>Pagá</h3>
+                        <h4>Seleccioná el método de pago que más te convenga</h4>
+                    </div>
+                    <div class="envios">
+                        <img src="img/moto.png" alt="envios">
+                        <h3>Disfrutá</h3>
+                        <h4>Te mandamos tu pedido para que puedas disfrutar</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!--MENU DE PRODUCTOS-->
+            <div class="menu_productos" name="menu">
+                <div class="container">
+                    <h2>Explorá nuestro menú</h2>
+                    <div class="row">
+                        <!--ALERTA PRODCUTO AÑADIDO-->
+                        <div class="alert container position-sticky top-0 alert-primary hide" role="alert">Producto añadido al carrito!</div>
+                        <!--CUADRICULA PRODUCTOS-->
+                        <div class="show active container">
+                            <div class="cuadricula_productos">
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                                    <div class="card shadow mb-1 rounded">
+                                        <div class="card_show">
+                                            <img src="img/choco_oreo.jpg" class="card-img-top" alt="torta choco-oreo">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Choco-oreo</h3>
+                                            <button id="info" aria-describedby="tooltip">
+                                                <img src="img/informacion.png" alt="informacion">
+                                            </button>
+                                            <div id="tooltip" role="tooltip"><b>Descripción:</b>Cheescake con base crocante, crema de limon y frutos rojos. <b>Tamaño:</b>Molde 26cm</div>
+                                            <h4 class="precio">$ 1850</h4>
+                                            <div>
+                                                <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                                    <div class="card shadow mb-1 rounded">
+                                        <div class="card_show">
+                                            <img src="img/doble_oreo.jpg" class="card-img-top" alt="torta doble oreo">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Doble Oreo</h3>
+                                            <button id="info" aria-describedby="tooltip">
+                                                <img src="img/informacion.png" alt="informacion">
+                                            </button>
+                                            <div id="tooltip" role="tooltip"><b>Descripción:</b>Torta de galletitas oreo con dulce de leche y crema.<b> Tamaño:</b> molde 26cm</div>
+                                            <h4 class="precio">$ 1800</h4>
+                                            <div>
+                                                <button class="btn btn-secondary boton ml-auto" data-toggle="modal" id="boton_modal">Añadir</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                                    <div class="card shadow mb-1 rounded">
+                                        <div class="card_show">
+                                            <img src="img/praline.jpg" class="card-img-top" alt="torta praline de frutos secos">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Praline</h3>
+                                            <button id="info" aria-describedby="tooltip">
+                                                <img src="img/informacion.png" alt="informacion">
+                                            </button>
+                                            <div id="tooltip" role="tooltip"><b>Descripción:</b>Cheescake con base crocante, crema de limon y frutos rojos.<b> Tamaño:</b> molde 26cm</div>                                            
+                                            <h4 class="precio">$ 1750</h4>
+                                            <div>
+                                                <button class="btn btn-secondary boton ml-auto" data-toggle="modal" id="boton_modal">Añadir</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                                    <div class="card shadow mb-1 rounded">
+                                        <div class="card_show">
+                                            <img src="img/franui.png" class="card-img-top" alt="torta franui">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Franui</h3>
+                                            <button id="info" aria-describedby="tooltip">
+                                                <img src="img/informacion.png" alt="informacion">
+                                            </button>
+                                            <div id="tooltip" role="tooltip"><b>Descripción:</b>Cheescake con base crocante, crema de limon y frutos rojos. <b>Tamaño:</b>Molde 26cm</div>
+                                            <h4 class="precio">$ 1950</h4>
+                                            <div>
+                                                <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                                    <div class="card shadow mb-1 rounded">
+                                        <div class="card_show">
+                                            <img src="img/mousse.jpg" class="card-img-top" alt="torta mousse de chocolate">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Mousse</h3>
+                                            <button id="info" aria-describedby="tooltip">
+                                                <img src="img/informacion.png" alt="informacion">
+                                            </button>
+                                            <div id="tooltip" role="tooltip"><b>Descripción:</b>Cheescake con base crocante, crema de limon y frutos rojos. <b>Tamaño:</b>Molde 26cm</div>
+                                            <h4 class="precio">$ 1800</h4>
+                                            <div>
+                                                <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                                    <div class="card shadow mb-1 rounded">
+                                        <div class="card_show">
+                                            <img src="img/marquisse.jpg" class="card-img-top" alt="torta marquisse de chocolate">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Marquisse</h3>
+                                            <button id="info" aria-describedby="tooltip">
+                                                <img src="img/informacion.png" alt="informacion">
+                                            </button>
+                                            <div id="tooltip" role="tooltip"><b>Descripción:</b>Cheescake con base crocante, crema de limon y frutos rojos. <b>Tamaño:</b>Molde 26cm</div>
+                                            <h4 class="precio">$ 1350</h4>
+                                            <div>
+                                                <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                                    <div class="card shadow mb-1 rounded">
+                                        <div class="card_show">
+                                            <img src="img/chessecake_frutos_rojos.jpg" class="card-img-top" alt="torta cheesecake de frutos rojos">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Cheesecake</h3>
+                                            <button id="info" aria-describedby="tooltip">
+                                                <img src="img/informacion.png" alt="informacion">
+                                            </button>
+                                            <div id="tooltip" role="tooltip"><b>Descripción:</b>Cheescake con base crocante, crema de limon y frutos rojos. <b>Tamaño:</b>Molde 26cm</div>
+                                            <h4 class="precio">$ 1800</h4>
+                                            <div>
+                                                <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                                    <div class="card shadow mb-1 rounded">
+                                        <div class="card_show">
+                                            <img src="img/crumble_manzana.jpg" class="card-img-top" alt="torta crumble de manzana">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Crumble</h3>
+                                            <button id="info" aria-describedby="tooltip">
+                                                <img src="img/informacion.png" alt="informacion">
+                                            </button>
+                                            <div id="tooltip" role="tooltip"><b>Descripción:</b>Cheescake con base crocante, crema de limon y frutos rojos. <b>Tamaño:</b>Molde 26cm</div>
+                                            <h4 class="precio">$ 1800</h4>
+                                            <div>
+                                                <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CARRITO MODAL-->
+            <div class="carrito modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" id="exampleModal">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">Carrito de Compras</h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Producto</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody"></tbody>
+                            </table>
+                            <br><br>
+                            <div class="row mx-4">
+                                <div class="col">
+                                    <h3 class="item_total_carrito">Total a pagar: 0</h3>
+                                </div>
+                                <div class="modal-footer col d-flex justify-content-end">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="boton_carrito_final" data-dismiss="modal">Seguir comprando</button>
+                                    <button type="button" class="btn btn-secondary" id="btn_finalizar_compra">Finalizar compra</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                <!--PORQUE ELEGIRNOS-->
+            <div class="elegir">
+                <h2>¿Por qué elegirnos?</h2>
+                <div class="grid_elegir">
+                    <div class="col-md-4 amor">
+                        <img src="img/amor.png" alt="amor">
+                        <p>Lo hacemos  con amor</p>
+                    </div>
+                    <div class="col-md-4 frescos">
+                        <img src="img/frescos.png" alt="productos frescos">
+                        <p>Productos frescos</p>
+                    </div>
+                    <div class="col-md-4 calidad">
+                        <img src="img/calidad.png" alt="calidad">
+                        <p>Productos de calidad</p>
+                    </div>
+                    <div class="col-md-4 artesanal">
+                        <img src="img/cocina.png" alt="cocina artesanal">
+                        <p>Productos artesanales</p>
+                    </div>
+                </div>
+            </div>
+                
+            <!--NOSOTROS-->
+            <div class="nosotros">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <h2>¿Quiénes somos?</h2>
+                            <p>Soy Leila Doiny, tengo 26 años, soy Licenciada en Administración de empresas y próximamente Licenciada en Gastronomía en IAG (y muy fan).</p>
+                            <p> Empecé con este emprendimiento como hobbie, y desde hace ya 3 años que pasó a ser mi trabajo y una parte muy importante de mi vida. No solo cocino, sino también llevo amor en forma de comida rica a sus casas. Y si hay algo que me gusta, es que ustedes valoren estos aspectos de igual forma que yo.</p>
+                            <p>Tengo la suerte de poder dedicarme a lo que me gusta, y que cada día crezca más, (incluso más de lo que me podía imaginar) y se lo debo a ustedes que están del otro lado. Cómo les digo siempre, gracias por dejarme ser parte de sus momentos y recuerdos, GRACIAS por dejarme entrar a sus casas y por ser siempre los mejores críticos del mundo.</p>
+                            <p class="amor_firma">¡Los quiero!</p>
+                            <h3>Lei Doiny</h3>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <img src="img/cocinera.png" alt="cocinera" class="cocinera">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CARROUSEL DE CLIENTES FELICES-->
+            <div class="clientes_felices">
+                <h2>Clientes felices</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="col-md-4">
+                                            <div class="caja">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, explicabo. Quibusdam ab repudiandae est officiis accusantium.</p>
+                                                <h5>Sofi 18 años</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="caja">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, explicabo. Quibusdam ab repudiandae est officiis accusantium.</p>
+                                                <h5>Annie 35 años</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="caja">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, explicabo. Quibusdam ab repudiandae est officiis accusantium.</p>
+                                                <h5>Max 26 años</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="carousel-item">
+                                        <div class="col-md-4">
+                                            <div class="caja">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, explicabo. Quibusdam ab repudiandae est officiis accusantium.</p>
+                                                <h5>Eva 28 años</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="caja">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, explicabo. Quibusdam ab repudiandae est officiis accusantium.</p>
+                                                <h5>Sol 46 años</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="caja">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, explicabo. Quibusdam ab repudiandae est officiis accusantium.</p>
+                                                <h5>Shir 23 años</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--PREGUNTAS FRECUENTES-->
+            <div class="preguntas_frecuentes" name="FAQ">
+                <h2>Preguntas frecuentes</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="card col-lg-5 col-md-12">
+                            <div class="card-body">
+                                <div class="pregunta">
+                                    <p>¿Cómo programar la fecha de entrega de mi pedido?</p>
+                                </div>
+                                <div class="respuesta">
+                                    <p>En el proceso de compra vas a poder indicarnos la fecha de tu envío, cuándo querés que lo entreguemos o si vas a venir a retirarlo personalmente.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-lg-5 col-md-12">
+                            <div class="card-body">
+                                <div class="pregunta">
+                                    <p>¿Cuánto tiempo duran los productos en la heladera?</p>
+                                </div>
+                                <div class="respuesta">
+                                    <p>Todas las piezas de pastelería son super frescas y duran en las cajas que enviamos más heladera perfectamente una semana.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-lg-5 col-md-12">
+                            <div class="card-body">
+                                <div class="pregunta">
+                                    <p>¿Con cuánta anticipación tengo que hacer mi pedido?</p>
+                                </div>
+                                <div class="respuesta">
+                                    <p>Las Cajas Dulces y las Tortas Enteras deben ser solicitadas con un mínimo entre 24hs y 48hs de anticipación dependiendo del producto. Mientras que los Marcos y Medios Marcos con 1 semana de anticipación.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-lg-5 col-md-12">
+                            <div class="card-body">
+                                <div class="pregunta">
+                                    <p>¿Cuál es el costo del envío? ¿Hasta dónde llega?</p>
+                                </div>
+                                <div class="respuesta">
+                                    <p>En el proceso de compra, vas a poder indicarnos tu domicilio y ver el costo correspondiente del mismo. Ingresando en la sección "Delivery" podes fijarte si llegamos hasta tu domicilio.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-lg-5 col-md-12">
+                            <div class="card-body">
+                                <div class="pregunta">
+                                    <p>¿Puedo realizar mi compra y retirar en el mismo día?</p>
+                                </div>
+                                <div class="respuesta">
+                                    <p>No, todos los pedidos, ya sean para delivery o para Retirar por el mostrador dulce, se deben realizar mínimo con 24hs de anticipación.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-lg-5 col-md-12">
+                            <div class="card-body">
+                                <div class="pregunta">
+                                    <p>¿Cuánto tiempo tarda en llegar mi pedido?</p>
+                                </div>
+                                <div class="respuesta">
+                                    <p>Primero, tenés que saber los días de entrega de tu zona y la franja horaria correspondiente a cada una. Luego, si querés recibir o enviar tu pedido al día siguiente debés realizar la compra antes de las 18hs del día anterior.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <!--FORMULARIO DE CONTACTO-->
+            <form id="formulario">
+                <h2>Tenes algúna duda? Contanos!</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-12 ml-auto">
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Nombre</label>
+                                <input type="text" name="Nombre" class="form-control" id="texto_contacto_nombre nombre" placeholder="Introducir el nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">E-Mail</label>
+                                <input type="text" name="Mail" class="form-control" id="formGroupExampleInput2 texto_contacto_mail" placeholder="ejemplo@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Celular</label>
+                                <input type="number" name="Celular" class="form-control" id="formGroupExampleInput2 numero_contacto_celular" placeholder="Introducir el celular" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Mensaje</label>
+                                <input class="form-control" name="Mensaje" id="exampleFormControlTextarea1 texto_contacto_mensaje" placeholder="Dejanos tu mensaje">
+                            </div>  
+                            <div class="form-group">
+                                <input type="submit" value="Enviar" class="btn btn-secondary text-uppercase" id="btn_enviar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+                <!--FOOTER-->
+            <footer>
+                    <div class="grid_footer">
+                            <!--CONTACTO-->
+                        <div class="contacto">
+                            <h5>CONTACTANOS</h5>
+                            <li>
+                                <img src="img/telefono.png" alt="telefono">
+                                <p>011 7367 1776</p>
+                            </li>
+                            <li>
+                                <img src="img/mail.png" alt="mail">
+                                <p>leidoiny@gmail.com</p>
+                            </li>
+                            <li>
+                                <img src="img/ubicacion.png" alt="ubicacion">
+                                <p>Villa Crespo, CABA</p>
+                            </li>
+                        </div>
+                            <!--SUSCRIPCION-->
+                        <div class="suscripcion"></div>
+                            <!--REDES SOOCIALES-->
+                        <div class="center-block">
+                            <div class="sociales">
+                                <h5>REDES SOCIALES</h5>
+                            </div>
+                            <div>
+                                <a href="https://web.whatsapp.com/" target="blank">
+                                    <img src="img/whatsapp.png" alt="whatsapp" title="whatsapp">
+                                </a>
+                                <a href="https://www.facebook.com/Leidoiny-Cakes-1218950871493041/?hc_ref=ARQYTRuzalG90OdyVzor4YJlndkvL0GC6nX75gTqeBS0bhI_AiMVUQXqzjN_1IDtZUs&fref=nf&__tn__=kC-R" target="blank">
+                                    <img src="img/facebook.png" alt="facebook" title="facebook">
+                                </a>
+                                <a href="https://www.instagram.com/leidoiny_cakes/?hl=es" target="blank">
+                                    <img src="img/instagram.png" alt="instagram" title="instagram">
+                                </a>
+                            </div>
+                        </div>
+                            <!--COPYRIGHT-->
+                        <div class="copy">
+                            <p>Copyright 2021 © TS | Made with ❤️</p>
+                        </div>
+                    </div>
+            </footer>                
+
+            <!--JQUERY-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+            <!--POPPER-->
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+            <!--BOOTSTRAP-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+            <!--SWEETALERT-->
+        <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+            <!--JAVASCRIPT-->
+        <script src="js/suscripcion.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

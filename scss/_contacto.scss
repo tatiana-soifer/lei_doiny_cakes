@@ -1,0 +1,18 @@
+#formulario{
+    background-image: url(../img/porcion_doble_oreo.png);
+    background-repeat: no-repeat;
+    h2{
+        font-size: 52px!important;
+    }
+    .form-control{
+        border: 1px solid #5A5A5A;
+        .form-control{
+            background: #DAD8D9;
+        }
+    }
+}
+
+//ESTILO SOBRE LA ALERTA DE FORMULARIO ENVIADO
+.swal-title:not(:first-child) {
+    padding-bottom: 5%;
+}

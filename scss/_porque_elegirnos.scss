@@ -1,0 +1,35 @@
+//PORQUE ELEGIRNOS
+.elegir{
+    background-image: url(../img/chocotorta_entera.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    h2{
+        text-align: right!important;
+        padding-right: 5%;
+        padding-bottom: 2%;
+    }
+    p{
+        text-align: center;
+        font-size: 18px;
+        height: fit-content;
+    }
+    .grid_elegir{
+        display: grid;
+        grid-template-areas: "amor frescos"
+                            "calidad artesanal";
+        align-items: last baseline;
+    }
+}
+.amor{
+    grid-area: amor;
+}
+.frescos{
+    grid-area: frescos;
+}
+.calidad{
+    grid-area: calidad;
+}
+.artesanal{
+    grid-area: artesanal;
+}

@@ -1,0 +1,20 @@
+//MENU DE PRODUCTOS
+.cuadricula_productos{
+    display: flex;
+    flex-wrap: wrap;
+    .card{
+        border-radius: 17px 17px 17px 17px!important;
+    }
+    .card-body{
+        background-color: #F3D6E1;
+        border-radius: 0px 0px 17px 17px;
+        button{
+            float: right;
+        }
+    }
+    .card_show{
+        img{
+            border-radius: 17px 17px 0px 0px;
+        }
+    }
+}

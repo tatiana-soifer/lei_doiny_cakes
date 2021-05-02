@@ -1,0 +1,25 @@
+.clientes_felices{
+    padding-bottom: 5%;
+    .caja{
+        width: 18rem;
+        background: linear-gradient(114.48deg, rgba(216, 216, 216, 0.7) 9.06%, rgba(216, 216, 216, 0.3) 90.08%);
+        box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+        border-radius: 17px;
+        margin-left: 1%;
+        margin-right: 1%;
+        padding: 0%;
+        border: 1px #F22973;
+        h5{
+            font-size: 16px;
+            color: #9b8b8b;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            padding: 2%;
+        }
+        p{
+            color: #9b8b8b;
+            font-family: 'Montserrat', sans-serif;
+            padding: 2%;
+        }
+    }
+}
