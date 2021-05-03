@@ -165,9 +165,9 @@ hideEvents.forEach (event => {
 
 //MENU DE PRODUCTOS
 $(document).ready(function(){
-	$('.menu_listado .categoria_item[categoria="todos"]').addClass('item_active');
+	$('.menu_listado .categoria_item[category="todos"]').addClass('item_active');
     $('.categoria_item').click(function(){
-		let categoria_producto = $(this).attr('categoria');
+		let categoria_producto = $(this).attr('category');
 		console.log(categoria_producto);
         $('.categoria_item').removeClass('item_active');
 		$(this).addClass('item_active');
@@ -177,12 +177,12 @@ $(document).ready(function(){
 		}
         setTimeout(ocultar_producto,400);
         function mostrar_producto(){
-			$('.producto_item[categoria="'+categoria_producto+'"]').show();
-			$('.producto_item[categoria="'+categoria_producto+'"]').css('transform', 'scale(1)');
+			$('.producto_item[category="'+categoria_producto+'"]').show();
+			$('.producto_item[category="'+categoria_producto+'"]').css('transform', 'scale(1)');
 		}
         setTimeout(mostrar_producto,400);
 	});
-    $('.categoria_item[category="all"]').click(function(){
+    $('.categoria_item[category="todos"]').click(function(){
 		function mostrar_todo(){
 			$('.producto_item').show();
 			$('.producto_item').css('transform', 'scale(1)');

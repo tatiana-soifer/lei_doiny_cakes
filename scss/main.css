@@ -261,8 +261,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .menu_listado {
@@ -276,9 +274,11 @@ header {
 }
 
 .menu_listado a {
-  text-decoration: none;
+  list-style: none;
+  text-align: center;
   color: #5A5A5A;
-  padding-right: 1%;
+  display: inline;
+  padding-left: 2%;
 }
 
 .producto_item {

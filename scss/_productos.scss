@@ -21,16 +21,17 @@
 //MENU DE PRODUCTOS
 .menu_productos{
     display: flex;
-	flex-wrap: wrap;
 }
 .menu_listado{
     display: flex;
     padding-bottom: 2%;
     justify-content: center;
     a{
-        text-decoration: none;
+        list-style: none;
+        text-align: center;
         color: #5A5A5A;
-        padding-right: 1%;
+        display:inline;
+        padding-left: 2%;
     }
 }
 .producto_item{
