@@ -191,6 +191,7 @@ $(document).ready(function(){
 	});
 });
 
+
 //PREGUNTAS FRECUENTES
 $(document).ready(function(){
     $('.pregunta').click(function(){
