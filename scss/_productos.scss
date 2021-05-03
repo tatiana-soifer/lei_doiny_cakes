@@ -1,47 +1,38 @@
+.cuadricula_productos{
+    display: flex;
+    flex-wrap: wrap;
+    .card{
+        border-radius: 17px 17px 17px 17px!important;
+    }
+    .card-body{
+        background-color: #F3D6E1;
+        border-radius: 0px 0px 17px 17px;
+        button{
+            float: right;
+        }
+    }
+    .card_show{
+        img{
+            border-radius: 17px 17px 0px 0px;
+        }
+    }
+}
+
 //MENU DE PRODUCTOS
 .menu_productos{
-    li{
-    list-style: none;
-    padding: 0;
-    margin: 5px 0 35px 0;
-    text-align: center;
+    display: flex;
+	flex-wrap: wrap;
+}
+.menu_listado{
+    display: flex;
+    padding-bottom: 2%;
+    justify-content: center;
+    a{
+        text-decoration: none;
+        color: #5A5A5A;
+        padding-right: 1%;
     }
 }
-.cuadricula_tortas{
-    display: flex;
-    flex-wrap: wrap;
-    .card{
-        border-radius: 17px 17px 17px 17px!important;
-    }
-    .card-body{
-        background-color: #F3D6E1;
-        border-radius: 0px 0px 17px 17px;
-        button{
-            float: right;
-        }
-    }
-    .card_show{
-        img{
-            border-radius: 17px 17px 0px 0px;
-        }
-    }
-}
-.cuadricula_desayunos_meriendas{
-    display: flex;
-    flex-wrap: wrap;
-    .card{
-        border-radius: 17px 17px 17px 17px!important;
-    }
-    .card-body{
-        background-color: #F3D6E1;
-        border-radius: 0px 0px 17px 17px;
-        button{
-            float: right;
-        }
-    }
-    .card_show{
-        img{
-            border-radius: 17px 17px 0px 0px;
-        }
-    }
+.producto_item{
+	transition: all .4s;
 }

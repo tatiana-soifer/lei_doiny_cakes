@@ -163,32 +163,26 @@ hideEvents.forEach (event => {
 });
 
 
-//MENU PRODUCTOS
+//MENU DE PRODUCTOS
 $(document).ready(function(){
-	// AGREGANDO CLASE ACTIVE AL PRIMER ENLACE
-	$('.menu_listado .categoria_item[categoria="todos"]').addClass('ct_item-active');
-	// FILTRANDO PRODUCTOS
-	$('.categoria_item').click(function(){
+	$('.menu_listado .categoria_item[categoria="todos"]').addClass('item_active');
+    $('.categoria_item').click(function(){
 		let categoria_producto = $(this).attr('categoria');
 		console.log(categoria_producto);
-		// AGREGANDO CLASE ACTIVE AL ENLACE SELECCIONADO
-		$('.categoria_item').removeClass('ct_item-active');
-		$(this).addClass('ct_item-active');
-		// OCULTANDO PRODUCTOS
-		$('.producto_item').css('transform', 'scale(0)');
+        $('.categoria_item').removeClass('item_active');
+		$(this).addClass('item_active');
+        $('.producto_item').css('transform', 'scale(0)');
 		function ocultar_producto(){
 			$('.producto_item').hide();
-		} 
+		}
         setTimeout(ocultar_producto,400);
-		// MOSTRANDO PRODUCTOS
-		function mostrar_producto(){
+        function mostrar_producto(){
 			$('.producto_item[categoria="'+categoria_producto+'"]').show();
 			$('.producto_item[categoria="'+categoria_producto+'"]').css('transform', 'scale(1)');
-		} 
+		}
         setTimeout(mostrar_producto,400);
 	});
-	// MOSTRANDO TODOS LOS PRODUCTOS
-	$('.categoria_item[category="all"]').click(function(){
+    $('.categoria_item[category="all"]').click(function(){
 		function mostrar_todo(){
 			$('.producto_item').show();
 			$('.producto_item').css('transform', 'scale(1)');

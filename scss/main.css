@@ -92,7 +92,7 @@ header {
   display: grid;
       grid-template-areas: "contacto suscripcion sociales" "copy copy copy";
   grid-column-gap: 1rem;
-  background-color: #ACACAD;
+  background-color: #F3D6E1;
 }
 
 .grid_footer p {
@@ -232,14 +232,7 @@ header {
   font-size: 23px;
 }
 
-.menu_productos li {
-  list-style: none;
-  padding: 0;
-  margin: 5px 0 35px 0;
-  text-align: center;
-}
-
-.cuadricula_tortas {
+.cuadricula_productos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,24 +240,24 @@ header {
       flex-wrap: wrap;
 }
 
-.cuadricula_tortas .card {
+.cuadricula_productos .card {
   border-radius: 17px 17px 17px 17px !important;
 }
 
-.cuadricula_tortas .card-body {
+.cuadricula_productos .card-body {
   background-color: #F3D6E1;
   border-radius: 0px 0px 17px 17px;
 }
 
-.cuadricula_tortas .card-body button {
+.cuadricula_productos .card-body button {
   float: right;
 }
 
-.cuadricula_tortas .card_show img {
+.cuadricula_productos .card_show img {
   border-radius: 17px 17px 0px 0px;
 }
 
-.cuadricula_desayunos_meriendas {
+.menu_productos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,21 +265,25 @@ header {
       flex-wrap: wrap;
 }
 
-.cuadricula_desayunos_meriendas .card {
-  border-radius: 17px 17px 17px 17px !important;
+.menu_listado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 2%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.cuadricula_desayunos_meriendas .card-body {
-  background-color: #F3D6E1;
-  border-radius: 0px 0px 17px 17px;
+.menu_listado a {
+  text-decoration: none;
+  color: #5A5A5A;
+  padding-right: 1%;
 }
 
-.cuadricula_desayunos_meriendas .card-body button {
-  float: right;
-}
-
-.cuadricula_desayunos_meriendas .card_show img {
-  border-radius: 17px 17px 0px 0px;
+.producto_item {
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .como_comprar {

@@ -82,25 +82,25 @@
             </div>
 
             <!--MENU DE PRODUCTOS-->
-            <div class="menu_productos" name="menu">
+            <div class="menu_productos">
                 <div class="container">
                     <h2>Explorá nuestro menú</h2>
-                    <div class="col-lg-12 menu_lisatdo">
+                    <div class="menu_listado">
                         <a href="#" class="categoria_item" category="todos">Todos</a>
                         <a href="#" class="categoria_item" category="tortas">Tortas</a>
                         <a href="#" class="categoria_item" category="desayunos_meriendas">Desayunos y Meriendas</a>
                         <a href="#" class="categoria_item" category="alfajores">Alfajores</a>
-                        <a href="#" class="categoria_item" category="letter_cakes">Letter cake</a>
-                        <a href="#" class="categoria_item" category="huevos_rellenos">Huevos rellenos</a>
+                        <a href="#" class="categoria_item" category="letter_cakes">Letter Cake</a>
+                        <a href="#" class="categoria_item" category="huevos_rellenos">Huevos Rellenos</a>
                         <a href="#" class="categoria_item" category="shots">Shots</a>
                     </div>
                     <!--ALERTA PRODCUTO AÑADIDO-->
                     <div class="alert container position-sticky top-0 alert-primary hide" role="alert">Producto añadido al carrito!</div>
                     <!--CUADRICULA PRODUCTOS-->
-                    <div class="show active container">
+                    <div class="container">
                         <!--CUADRICULA TORTAS-->
-                        <div class="cuadricula_tortas">
-                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 filter_tortas">
+                        <div class="cuadricula_productos">
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="tortas">
                                 <div class="card shadow mb-1 rounded">
                                     <div class="card_show">
                                         <img src="img/choco_oreo.jpg" class="card-img-top" alt="torta choco-oreo">
@@ -110,7 +110,7 @@
                                         <button id="info" aria-describedby="tooltip">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
-                                        <div id="tooltip" role="tooltip"><b>Descripción:</b>Cheescake con base crocante, crema de limon y frutos rojos. <b>Tamaño:</b>Molde 26cm</div>
+                                        <div id="tooltip" role="tooltip"><b>Descripción:</b>Es la mezcla perfecta entre la Chocotorta y la Doble Oreo. Una bomba explosiva que hay que probar. <b>Tamaño:</b>Molde 26cm</div>
                                         <h4 class="precio">$ 1850</h4>
                                         <div>
                                             <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -118,7 +118,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 filter_tortas">
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="tortas">
                                 <div class="card shadow mb-1 rounded">
                                     <div class="card_show">
                                         <img src="img/doble_oreo.jpg" class="card-img-top" alt="torta doble oreo">
@@ -128,7 +128,7 @@
                                         <button id="info" aria-describedby="tooltip">
                                             <img src="img/informacion.png" alt="informacion">
                                             </button>
-                                            <div id="tooltip" role="tooltip"><b>Descripción:</b>Torta de galletitas oreo con dulce de leche y crema.<b> Tamaño:</b> molde 26cm</div>
+                                            <div id="tooltip" role="tooltip"><b>Descripción:</b>Dos capas de Oreo, dulce de leche y crema chantillí. <b> Tamaño:</b> molde 26cm</div>
                                             <h4 class="precio">$ 1800</h4>
                                             <div>
                                                 <button class="btn btn-secondary boton ml-auto" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -136,7 +136,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 filter_tortas">
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="tortas">
                                     <div class="card shadow mb-1 rounded">
                                         <div class="card_show">
                                             <img src="img/praline.jpg" class="card-img-top" alt="torta praline de frutos secos">
@@ -146,7 +146,7 @@
                                             <button id="info" aria-describedby="tooltip">
                                                 <img src="img/informacion.png" alt="informacion">
                                             </button>
-                                            <div id="tooltip" role="tooltip"><b>Descripción:</b>Cheescake con base crocante, crema de limon y frutos rojos.<b> Tamaño:</b> molde 26cm</div>                                            
+                                            <div id="tooltip" role="tooltip"><b>Descripción:</b>Crema pastelera de chocolate y praline de frutos secos. <b> Tamaño:</b> molde 26cm</div>                                            
                                             <h4 class="precio">$ 1750</h4>
                                             <div>
                                                 <button class="btn btn-secondary boton ml-auto" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -154,7 +154,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 filter_tortas">
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="tortas">
                                     <div class="card shadow mb-1 rounded">
                                         <div class="card_show">
                                             <img src="img/franui.jpg" class="card-img-top" alt="torta franui">
@@ -172,7 +172,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 filter_tortas">
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="tortas">
                                     <div class="card shadow mb-1 rounded">
                                         <div class="card_show">
                                             <img src="img/mousse.jpg" class="card-img-top" alt="torta mousse de chocolate">
@@ -182,7 +182,7 @@
                                             <button id="info" aria-describedby="tooltip">
                                                 <img src="img/informacion.png" alt="informacion">
                                             </button>
-                                            <div id="tooltip" role="tooltip"><b>Descripción:</b>Cheescake con base crocante, crema de limon y frutos rojos. <b>Tamaño:</b>Molde 26cm</div>
+                                            <div id="tooltip" role="tooltip"><b>Descripción:</b> <b>Tamaño:</b> Molde 26cm</div>
                                             <h4 class="precio">$ 1800</h4>
                                             <div>
                                                 <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -190,7 +190,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 filter_tortas">
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="tortas">
                                     <div class="card shadow mb-1 rounded">
                                         <div class="card_show">
                                             <img src="img/marquisse.jpg" class="card-img-top" alt="torta marquisse de chocolate">
@@ -200,7 +200,7 @@
                                             <button id="info" aria-describedby="tooltip">
                                                 <img src="img/informacion.png" alt="informacion">
                                             </button>
-                                            <div id="tooltip" role="tooltip"><b>Descripción:</b>Cheescake con base crocante, crema de limon y frutos rojos. <b>Tamaño:</b>Molde 26cm</div>
+                                            <div id="tooltip" role="tooltip"><b>Descripción:</b> Brownie húmedo, dulce de leche, crema chantillí o merengue Italiaano y lluvia de chocolate. <b>Tamaño:</b> Molde 26cm</div>
                                             <h4 class="precio">$ 1350</h4>
                                             <div>
                                                 <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -208,7 +208,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 filter_tortas">
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="tortas">
                                     <div class="card shadow mb-1 rounded">
                                         <div class="card_show">
                                             <img src="img/chessecake_frutos_rojos.jpg" class="card-img-top" alt="torta cheesecake de frutos rojos">
@@ -226,7 +226,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 filter_tortas">
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="tortas">
                                     <div class="card shadow mb-1 rounded">
                                         <div class="card_show">
                                             <img src="img/crumble_manzana.jpg" class="card-img-top" alt="torta crumble de manzana">
@@ -236,18 +236,18 @@
                                             <button id="info" aria-describedby="tooltip">
                                                 <img src="img/informacion.png" alt="informacion">
                                             </button>
-                                            <div id="tooltip" role="tooltip"><b>Descripción:</b>Cheescake con base crocante, crema de limon y frutos rojos. <b>Tamaño:</b>Molde 26cm</div>
-                                            <h4 class="precio">$ 1800</h4>
-                                            <div>
-                                                <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
-                                            </div>
+                                        <div id="tooltip" role="tooltip"><b>Descripción:</b> Base de masa quebrada dulce, manzana y un crumble crocante. <b>Tamaño:</b> Molde 26cm</div>
+                                        <h4 class="precio">$ 1800</h4>
+                                        <div>
+                                            <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!--CUADRICULA DESAYUNOS Y MERIENDAS-->
-                            <div class="cuadricula_desayunos_meriendas filter_desayunos_meriendas">
-                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 filter_desayunos_meriendas">
+                        </div>
+                        <!--CUADRICULA DESAYUNOS Y MERIENDAS-->
+                        <div class="cuadricula_productos">
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="desayunos_meriendas">
                                     <div class="card shadow mb-1 rounded">
                                         <div class="card_show">
                                             <img src="img/choco_oreo.jpg" class="card-img-top" alt="desayuno">
@@ -265,32 +265,181 @@
                                         </div>                                        
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 filter_desayunos_meriendas">
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="desayunos_meriendas">
                                     <div class="card shadow mb-1 rounded">
                                         <div class="card_show">
                                             <img src="img/choco_oreo.jpg" class="card-img-top" alt="desayuno">
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <h3 class="card-title">Desayuno 1</h3>
+                                        <h3 class="card-title">Desayuno 2</h3>
                                         <button id="info" aria-describedby="tooltip">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
-                                        <div id="tooltip" role="tooltip"><b>Descripción:</b>Cheescake con base crocante, crema de limon y frutos rojos. <b>Tamaño:</b>Molde 26cm</div>
+                                        <div id="tooltip" role="tooltip">Descripción:</div>
                                         <h4 class="precio">$ 150</h4>
                                         <div>
                                             <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
                                         </div>                                        
                                     </div>
                                 </div>
+                        </div>
+                        <!--CUADRICULA ALFAJORES-->
+                        <div class="cuadricula_productos">
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="alfajores">
+                                <div class="card shadow mb-1 rounded">
+                                    <div class="card_show">
+                                        <img src="img/choco_oreo.jpg" class="card-img-top" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Alfajores De Maicena</h3>
+                                    <button id="info" aria-describedby="tooltip">
+                                        <img src="img/informacion.png" alt="informacion">
+                                    </button>
+                                    <div id="tooltip" role="tooltip">Descripción:</div>
+                                    <h4 class="precio">$ 150</h4>
+                                    <div>
+                                        <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
+                                    </div>                                        
+                                </div>
                             </div>
-
-
-
-
-
-
-
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="alfajor">
+                                <div class="card shadow mb-1 rounded">
+                                    <div class="card_show">
+                                        <img src="img/choco_oreo.jpg" class="card-img-top" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Alfajor de Chocolate</h3>
+                                    <button id="info" aria-describedby="tooltip">
+                                        <img src="img/informacion.png" alt="informacion">
+                                    </button>
+                                    <div id="tooltip" role="tooltip">Descripción:</div>
+                                    <h4 class="precio">$ 150</h4>
+                                    <div>
+                                        <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
+                                    </div>                                        
+                                </div>
+                            </div>
+                        </div>
+                        <!--CUADRICULA LETTER CAKES-->
+                        <div class="cuadricula_productos">
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="letter_cakes">
+                                <div class="card shadow mb-1 rounded">
+                                    <div class="card_show">
+                                        <img src="img/choco_oreo.jpg" class="card-img-top" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Chocotorta</h3>
+                                    <button id="info" aria-describedby="tooltip">
+                                        <img src="img/informacion.png" alt="informacion">
+                                    </button>
+                                    <div id="tooltip" role="tooltip">Descripción:</div>
+                                    <h4 class="precio">$ 150</h4>
+                                    <div>
+                                        <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="letter_cakes">
+                                <div class="card shadow mb-1 rounded">
+                                    <div class="card_show">
+                                        <img src="img/choco_oreo.jpg" class="card-img-top" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Sable</h3>
+                                    <button id="info" aria-describedby="tooltip">
+                                        <img src="img/informacion.png" alt="informacion">
+                                    </button>
+                                    <div id="tooltip" role="tooltip">Descripción:</div>
+                                    <h4 class="precio">$ 150</h4>
+                                    <div>
+                                        <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
+                                    </div>                                        
+                                </div>
+                            </div>
+                        </div>
+                        <!--CUADRICULA HUEVOS RELLENOS-->
+                        <div class="cuadricula_productos">
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="huevos_rellenos">
+                                <div class="card shadow mb-1 rounded">
+                                    <div class="card_show">
+                                        <img src="img/choco_oreo.jpg" class="card-img-top" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Huevo relleno de Nutella</h3>
+                                    <button id="info" aria-describedby="tooltip">
+                                        <img src="img/informacion.png" alt="informacion">
+                                    </button>
+                                    <div id="tooltip" role="tooltip">Descripción:</div>
+                                    <h4 class="precio">$ 150</h4>
+                                    <div>
+                                        <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="huevos_rellenos">
+                                <div class="card shadow mb-1 rounded">
+                                    <div class="card_show">
+                                        <img src="img/choco_oreo.jpg" class="card-img-top" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Huevo relleno de Crema de Oreo</h3>
+                                    <button id="info" aria-describedby="tooltip">
+                                        <img src="img/informacion.png" alt="informacion">
+                                    </button>
+                                    <div id="tooltip" role="tooltip">Descripción:</div>
+                                    <h4 class="precio">$ 150</h4>
+                                    <div>
+                                        <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
+                                    </div>                                        
+                                </div>
+                            </div>
+                        </div>
+                        <!--CUADRICULA SHOTS-->
+                        <div class="cuadricula_productos">
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="shots">
+                                <div class="card shadow mb-1 rounded">
+                                    <div class="card_show">
+                                        <img src="img/choco_oreo.jpg" class="card-img-top" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Caja de Shots Surtidos x 30 unidades</h3>
+                                    <button id="info" aria-describedby="tooltip">
+                                        <img src="img/informacion.png" alt="informacion">
+                                    </button>
+                                    <div id="tooltip" role="tooltip">Descripción:</div>
+                                    <h4 class="precio">$ 150</h4>
+                                    <div>
+                                        <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="shots">
+                                <div class="card shadow mb-1 rounded">
+                                    <div class="card_show">
+                                        <img src="img/choco_oreo.jpg" class="card-img-top" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Caja de Shots Surtidos x 60 unidades</h3>
+                                    <button id="info" aria-describedby="tooltip">
+                                        <img src="img/informacion.png" alt="informacion">
+                                    </button>
+                                    <div id="tooltip" role="tooltip">Descripción:</div>
+                                    <h4 class="precio">$ 150</h4>
+                                    <div>
+                                        <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
+                                    </div>                                        
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
