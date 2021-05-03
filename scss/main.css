@@ -532,7 +532,9 @@ header {
 }
 
 .preguntas_frecuentes .card {
-  margin-bottom: 1%;
+  margin-bottom: 2%;
+  margin-left: 4%;
+  margin-right: 4%;
   padding-top: 1%;
   padding-left: 1%;
   -webkit-box-shadow: 0px 4px 4px 0px #00000033;

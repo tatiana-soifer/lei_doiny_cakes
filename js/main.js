@@ -190,3 +190,67 @@ $(document).ready(function(){
         setTimeout(mostrar_todo,400);
 	});
 });
+
+//PREGUNTAS FRECUENTES
+$(document).ready(function(){
+    $('.pregunta').click(function(){
+        $('.respuesta').hide();
+    })
+    $('.pregunta').click(function(){
+        $('.respuesta').show();
+    })
+});
+
+
+
+
+//FORMULARIO DE CONTACTO
+let timeout = null;
+document.querySelectorAll('.form-group').forEach((box) => {
+    const box_input = box.querySelector('input');
+    box_input.addEventListener('keydown', (event) => {
+        clearTimeout (timeout);
+        timeout = setTimeout (() => {
+            console.log(`${box_input.name}`, box_input.value);
+        }, 300);
+    });
+});
+
+//ALERTA DE CONFIRMACION DE ENVIO FORMULARIO
+$('#btn_enviar').click(function(e){
+    e.preventDefault();
+    swal({
+        title: 'Formulario Eviado', 
+        icon: "success",
+        button: false,
+        timer: 5000,
+        });
+});
+
+
+
+
+//SUSCRIPCIÓN AL NEWSLETTER
+const suscripcion = document.querySelector('.suscripcion');
+$(document).ready(function(){
+    const APIURL = 'https://jsonplaceholder.typicode.com/posts';
+    const suscripcion = {mail:"leidoinycakes@gmail.com"}
+    $('.suscripcion').prepend(`<div class="suscripcion">
+                                <h4>Newsletter</h4>
+                                <h5>Dejanos tu mail y recibí las novedades!</h5>
+                                <input type="text" placeholder="E-mail">
+                                <button id="boton_suscripcion">
+                                    <img src="img/send.png" alt="send" title="send">
+                                </button>
+                            </div>`);
+    $("#boton_suscripcion").click(()=>{
+        $.ajax({
+            method: "POST",
+            url: APIURL,
+            data: suscripcion,
+            success: function (respuesta){
+                $('.suscripcion').prepend(`<div>${respuesta}</div>`);
+            }
+        });
+    });
+});
