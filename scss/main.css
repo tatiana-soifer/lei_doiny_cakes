@@ -8,7 +8,7 @@ h2 {
   font-family: 'Lobster', cursive;
   text-align: center;
   color: #F22973;
-  font-size: 50px;
+  font-size: 48px;
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -77,11 +77,18 @@ header {
 }
 
 .grid_footer p {
-  color: white;
+  color: #5A5A5A;
 }
 
 .grid_footer h5 {
-  color: white;
+  color: #5A5A5A;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.grid_footer h6 {
+  color: #5A5A5A;
+  font-size: 13px;
 }
 
 .contacto {
@@ -106,7 +113,6 @@ header {
 }
 
 .sociales {
-  padding-top: 12%;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: sociales;
@@ -465,54 +471,67 @@ header {
   background-image: url(../img/chocotorta_entera.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  height: 100%;
 }
 
 .elegir h2 {
   text-align: right !important;
   padding-right: 5%;
   padding-bottom: 2%;
+  padding-top: 5%;
 }
 
 .elegir p {
   text-align: center;
-  font-size: 18px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  font-size: 15px;
 }
 
 .elegir .grid_elegir {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "amor frescos" "calidad artesanal";
-  -webkit-box-align: last baseline;
-      -ms-flex-align: last baseline;
-          align-items: last baseline;
+  padding-bottom: 5%;
 }
 
 .amor {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: amor;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: 50%;
 }
 
 .frescos {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: frescos;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: 50%;
 }
 
 .calidad {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: calidad;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: 50%;
 }
 
 .artesanal {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: artesanal;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: 50%;
+}
+
+.artesanal img {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .clientes_felices {

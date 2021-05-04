@@ -5,11 +5,11 @@ let carrito = [];
 
 //BOTON PARA AGREGAR DESDE PRODUCTOS AL CARRITO 
 boton_agregar.forEach(btn => {
-    btn.addEventListener('click', addToCarritoItem);
+    btn.addEventListener('click', agregar_carrito);
 });
 
 //FUNCION PARA AGREGAR PRODUCTOS AL CARRITO
-function addToCarritoItem(e) {
+function agregar_carrito(e) {
     const boton = e.target;
     const item = boton.closest('.card');
     const item_titulo = item.querySelector('.card-title').textContent;
@@ -21,11 +21,11 @@ function addToCarritoItem(e) {
         foto: item_img,
         cantidad: 1,
     };
-    addItemCarrito(item_nuevo);
+    agregar_nuevo_producto(item_nuevo);
 };
 
-//FUNCION PARA CREAR UN NUEVO ITEM EN EL CARRITO
-function addItemCarrito (item_nuevo){
+//FUNCION PARA CREAR UN NUEVO PRODUCTO EN EL CARRITO
+function agregar_nuevo_producto(item_nuevo){
     //ALERTA DE CONFIRMACION QUE SE AGREGO UN NUEVO PRODUCTO
     const alert = document.querySelector('.alert');
     setTimeout(function(){
@@ -98,7 +98,7 @@ function suma_cantidad(e){
     });
 };
 
-//FUNCION PARA BORRAR ITEM COMPLETO EN CARRITO
+//FUNCION PARA BORRAR UN PRODUCTO COMPLETO EN CARRITO
 function item_borrar_carrito(e){
     const boton_borrar = e.target;
     const tr = boton_borrar.closest(".item_carrito");
@@ -193,14 +193,21 @@ $(document).ready(function(){
 
 
 //PREGUNTAS FRECUENTES
-$(document).ready(function(){
-    $('.pregunta').click(function(){
-        $('.respuesta').hide();
-    })
-    $('.pregunta').click(function(){
-        $('.respuesta').show();
-    })
+const pregunta = document.querySelectorAll('.pregunta');
+pregunta.forEach(pregunta =>{
+    pregunta.addEventListener('click', mostrar_respuesta);
 });
+function mostrar_respuesta (){
+    $('.respuesta').show();
+};
+
+/*
+$(document).ready(function(){
+    $('.respuesta_A').click(function (e){
+        e.preventDefault();
+        alert("hola");
+    });
+});*/
 
 
 
@@ -237,8 +244,8 @@ $(document).ready(function(){
     const APIURL = 'https://jsonplaceholder.typicode.com/posts';
     const suscripcion = {mail:"leidoinycakes@gmail.com"}
     $('.suscripcion').prepend(`<div class="suscripcion">
-                                <h4>Newsletter</h4>
-                                <h5>Dejanos tu mail y recibí las novedades!</h5>
+                                <h5>Newsletter</h5>
+                                <h6>Dejanos tu mail y recibí las novedades!</h6>
                                 <input type="text" placeholder="E-mail">
                                 <button id="boton_suscripcion">
                                     <img src="img/send.png" alt="send" title="send">
