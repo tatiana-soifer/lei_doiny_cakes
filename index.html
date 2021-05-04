@@ -21,7 +21,7 @@
                     <!--LOGO-->
                     <img src="img/logo.png" alt="logo" id="logo">
                     <!--MENU-->
-                    <nav class="navbar navbar-expand-lg sticky-top bg-light ml-auto">
+                    <nav class="navbar navbar-expand-lg sticky-top bg-light ml-auto position-sticky top-0">
                         <button class="navbar-toggler" id="borde_boton" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -86,13 +86,11 @@
                 <div class="container">
                     <h2>Explorá nuestro menú</h2>
                     <div class="menu_listado">
-                        <a href="#" class="categoria_item" category="todos">Todos</a>
-                        <a href="#" class="categoria_item" category="tortas">Tortas</a>
-                        <a href="#" class="categoria_item" category="desayunos_meriendas">Desayunos y Meriendas</a>
-                        <a href="#" class="categoria_item" category="alfajores">Alfajores</a>
-                        <a href="#" class="categoria_item" category="letter_cakes">Letter Cake</a>
-                        <a href="#" class="categoria_item" category="huevos_rellenos">Huevos Rellenos</a>
-                        <a href="#" class="categoria_item" category="shots">Shots</a>
+                        <li class="categoria_item" category="todos">Todos</li>
+                        <li class="categoria_item" category="tortas">Tortas</li>
+                        <li class="categoria_item" category="desayunos_meriendas">Desayunos y Meriendas</li>
+                        <li class="categoria_item" category="letter_cakes">Letter Cake</li>
+                        <li class="categoria_item" category="shots">Shots</li>
                     </div>
                     <!--ALERTA PRODCUTO AÑADIDO-->
                     <div class="alert container position-sticky top-0 alert-primary hide" role="alert">Producto añadido al carrito!</div>
@@ -110,7 +108,8 @@
                                         <button id="info" aria-describedby="tooltip">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
-                                        <div id="tooltip" role="tooltip"><b>Descripción:</b>Es la mezcla perfecta entre la Chocotorta y la Doble Oreo. Una bomba explosiva que hay que probar. <b>Tamaño:</b>Molde 26cm</div>
+                                        <div id="tooltip" role="tooltip">
+                                            <b>Descripción:</b> Es la mezcla perfecta entre la Chocotorta y la Doble Oreo. Una bomba explosiva que hay que probar. <b>Tamaño:</b>Molde 26cm</div>
                                         <h4 class="precio">$ 1850</h4>
                                         <div>
                                             <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -128,7 +127,7 @@
                                         <button id="info" aria-describedby="tooltip">
                                             <img src="img/informacion.png" alt="informacion">
                                             </button>
-                                            <div id="tooltip" role="tooltip"><b>Descripción:</b>Dos capas de Oreo, dulce de leche y crema chantillí. <b> Tamaño:</b> molde 26cm</div>
+                                            <div id="tooltip" role="tooltip"><b>Descripción:</b> Dos capas de Oreo, dulce de leche y crema chantillí. <b> Tamaño:</b> molde 26cm</div>
                                             <h4 class="precio">$ 1800</h4>
                                             <div>
                                                 <button class="btn btn-secondary boton ml-auto" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -146,7 +145,7 @@
                                             <button id="info" aria-describedby="tooltip">
                                                 <img src="img/informacion.png" alt="informacion">
                                             </button>
-                                            <div id="tooltip" role="tooltip"><b>Descripción:</b>Crema pastelera de chocolate y praline de frutos secos. <b> Tamaño:</b> molde 26cm</div>                                            
+                                            <div id="tooltip" role="tooltip"><b>Descripción:</b> Crema pastelera de chocolate y praline de frutos secos. <b> Tamaño:</b> molde 26cm</div>                                            
                                             <h4 class="precio">$ 1750</h4>
                                             <div>
                                                 <button class="btn btn-secondary boton ml-auto" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -164,7 +163,7 @@
                                             <button id="info" aria-describedby="tooltip">
                                                 <img src="img/informacion.png" alt="informacion">
                                             </button>
-                                            <div id="tooltip" role="tooltip"><b>Descripción:</b>Cheescake con base crocante, crema de limon y frutos rojos. <b>Tamaño:</b>Molde 26cm</div>
+                                            <div id="tooltip" role="tooltip"><b>Descripción:</b> Cheescake con base crocante, crema de limon y frutos rojos. <b>Tamaño:</b>Molde 26cm</div>
                                             <h4 class="precio">$ 1950</h4>
                                             <div>
                                                 <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -247,76 +246,73 @@
                         </div>
                         <!--CUADRICULA DESAYUNOS Y MERIENDAS-->
                         <div class="cuadricula_productos">
-                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="desayunos_meriendas">
-                                    <div class="card shadow mb-1 rounded">
-                                        <div class="card_show">
-                                            <img src="img/choco_oreo.jpg" class="card-img-top" alt="desayuno">
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h3 class="card-title">Desayuno 1</h3>
-                                        <button id="info" aria-describedby="tooltip">
-                                            <img src="img/informacion.png" alt="informacion">
-                                        </button>
-                                        <div id="tooltip" role="tooltip"><b>Descripción:</b>Cheescake con base crocante, crema de limon y frutos rojos. <b>Tamaño:</b>Molde 26cm</div>
-                                        <h4 class="precio">$ 150</h4>
-                                        <div>
-                                            <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
-                                        </div>                                        
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="desayunos_meriendas">
-                                    <div class="card shadow mb-1 rounded">
-                                        <div class="card_show">
-                                            <img src="img/choco_oreo.jpg" class="card-img-top" alt="desayuno">
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h3 class="card-title">Desayuno 2</h3>
-                                        <button id="info" aria-describedby="tooltip">
-                                            <img src="img/informacion.png" alt="informacion">
-                                        </button>
-                                        <div id="tooltip" role="tooltip">Descripción:</div>
-                                        <h4 class="precio">$ 150</h4>
-                                        <div>
-                                            <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
-                                        </div>                                        
-                                    </div>
-                                </div>
-                        </div>
-                        <!--CUADRICULA ALFAJORES-->
-                        <div class="cuadricula_productos">
-                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="alfajores">
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="desayunos_meriendas">
                                 <div class="card shadow mb-1 rounded">
                                     <div class="card_show">
-                                        <img src="img/choco_oreo.jpg" class="card-img-top" alt="">
+                                        <img src="img/choco_oreo.jpg" class="card-img-top" alt="desayuno">
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <h3 class="card-title">Alfajores De Maicena</h3>
+                                    <h3 class="card-title">Desayuno 1</h3>
                                     <button id="info" aria-describedby="tooltip">
                                         <img src="img/informacion.png" alt="informacion">
                                     </button>
-                                    <div id="tooltip" role="tooltip">Descripción:</div>
-                                    <h4 class="precio">$ 150</h4>
+                                    <div id="tooltip" role="tooltip"><b>Descripción:</b></div>
+                                    <h4 class="precio">$ 1500</h4>
                                     <div>
                                         <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
                                     </div>                                        
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="alfajores">
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="desayunos_meriendas">
                                 <div class="card shadow mb-1 rounded">
                                     <div class="card_show">
-                                        <img src="img/choco_oreo.jpg" class="card-img-top" alt="">
+                                        <img src="img/choco_oreo.jpg" class="card-img-top" alt="desayuno">
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <h3 class="card-title">Alfajor de Chocolate</h3>
+                                    <h3 class="card-title">Desayuno 2</h3>
                                     <button id="info" aria-describedby="tooltip">
                                         <img src="img/informacion.png" alt="informacion">
                                     </button>
                                     <div id="tooltip" role="tooltip">Descripción:</div>
-                                    <h4 class="precio">$ 150</h4>
+                                    <h4 class="precio">$ 2000</h4>
+                                    <div>
+                                        <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="desayunos_meriendas">
+                                <div class="card shadow mb-1 rounded">
+                                    <div class="card_show">
+                                        <img src="img/choco_oreo.jpg" class="card-img-top" alt="desayuno">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Desayuno 3</h3>
+                                    <button id="info" aria-describedby="tooltip">
+                                        <img src="img/informacion.png" alt="informacion">
+                                    </button>
+                                    <div id="tooltip" role="tooltip"><b>Descripción:</b></div>
+                                    <h4 class="precio">$ 2500</h4>
+                                    <div>
+                                        <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="desayunos_meriendas">
+                                <div class="card shadow mb-1 rounded">
+                                    <div class="card_show">
+                                        <img src="img/choco_oreo.jpg" class="card-img-top" alt="desayuno">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Desayuno 4</h3>
+                                    <button id="info" aria-describedby="tooltip">
+                                        <img src="img/informacion.png" alt="informacion">
+                                    </button>
+                                    <div id="tooltip" role="tooltip"><b>Descripción:</b></div>
+                                    <h4 class="precio">$ 3000</h4>
                                     <div>
                                         <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
                                     </div>                                        
@@ -351,45 +347,6 @@
                                 </div>
                                 <div class="card-body">
                                     <h3 class="card-title">Sable</h3>
-                                    <button id="info" aria-describedby="tooltip">
-                                        <img src="img/informacion.png" alt="informacion">
-                                    </button>
-                                    <div id="tooltip" role="tooltip">Descripción:</div>
-                                    <h4 class="precio">$ 150</h4>
-                                    <div>
-                                        <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
-                                    </div>                                        
-                                </div>
-                            </div>
-                        </div>
-                        <!--CUADRICULA HUEVOS RELLENOS-->
-                        <div class="cuadricula_productos">
-                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="huevos_rellenos">
-                                <div class="card shadow mb-1 rounded">
-                                    <div class="card_show">
-                                        <img src="img/choco_oreo.jpg" class="card-img-top" alt="">
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <h3 class="card-title">Huevo relleno de Nutella</h3>
-                                    <button id="info" aria-describedby="tooltip">
-                                        <img src="img/informacion.png" alt="informacion">
-                                    </button>
-                                    <div id="tooltip" role="tooltip">Descripción:</div>
-                                    <h4 class="precio">$ 150</h4>
-                                    <div>
-                                        <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
-                                    </div>                                        
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="huevos_rellenos">
-                                <div class="card shadow mb-1 rounded">
-                                    <div class="card_show">
-                                        <img src="img/choco_oreo.jpg" class="card-img-top" alt="">
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <h3 class="card-title">Huevo relleno de Crema de Oreo</h3>
                                     <button id="info" aria-describedby="tooltip">
                                         <img src="img/informacion.png" alt="informacion">
                                     </button>
@@ -700,8 +657,29 @@
                                 <p>Villa Crespo, CABA</p>
                             </li>
                         </div>
-                            <!--SUSCRIPCION-->
-                        <div class="suscripcion"></div>
+                        <!--METODOS DE PAGO-->
+                        <div class="pago">
+                            <div class="grid_pago">
+                                    <div>
+                                        <img src="img/visa.png" alt="metodo de pago visa">
+                                    </div>
+                                    <div>
+                                        <img src="img/amex.png" alt="metodo de pago amex">
+                                    </div>
+                                    <div>
+                                        <img src="img/mercado_pago.png" alt="metodo de pago mercado pago">
+                                    </div>
+                                    <div>
+                                        <img src="img/mastercard.png" alt="metodo de pago mastercard">
+                                    </div>
+                                    <div>
+                                        <img src="img/diners.png" alt="metodo de pago diners">
+                                    </div>
+                                    <div>
+                                        <img src="img/cabal.png" alt="metodo de pago cabal">
+                                    </div>
+                            </div>
+                        </div>
                             <!--REDES SOOCIALES-->
                         <div class="center-block">
                             <div class="sociales">
@@ -719,6 +697,8 @@
                                 </a>
                             </div>
                         </div>
+                        <!--SUSCRIPCION-->
+                        <div class="suscripcion"></div>
                             <!--COPYRIGHT-->
                         <div class="copy">
                             <p>Copyright 2021 © TS | Made with ❤️</p>

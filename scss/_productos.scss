@@ -1,4 +1,24 @@
-.cuadricula_productos{
+//MENU DE PRODUCTOS
+.menu_productos{
+    display: flex;
+}
+.menu_listado{
+    display: flex;
+    padding-bottom: 2%;
+    justify-content: center;
+    li{
+        list-style: none;
+        text-align: center;
+        color: #5A5A5A;
+        display:inline;
+        padding-left: 2%;
+    }
+}
+
+//PRODUCTOS
+.producto_item{
+	transition: all .4s;
+}.cuadricula_productos{
     display: flex;
     flex-wrap: wrap;
     .card{
@@ -18,22 +38,21 @@
     }
 }
 
-//MENU DE PRODUCTOS
-.menu_productos{
-    display: flex;
+//POPPER DESCRIPCION
+#info{
+    border: none;
+    background: none;
 }
-.menu_listado{
-    display: flex;
-    padding-bottom: 2%;
-    justify-content: center;
-    a{
-        list-style: none;
-        text-align: center;
-        color: #5A5A5A;
-        display:inline;
-        padding-left: 2%;
-    }
+#tooltip{
+    display: none;
+    background: linear-gradient(114.48deg, #D8D8D8 9.06%, rgba(216, 216, 216, 0.3) 90.08%);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 17px;
+    border: 1px solid #F22973;
+    z-index: 100;
 }
-.producto_item{
-	transition: all .4s;
+#tooltip[data-show] {
+    display: block;
 }
+
