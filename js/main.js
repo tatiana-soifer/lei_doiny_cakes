@@ -193,23 +193,48 @@ $(document).ready(function(){
 
 
 //PREGUNTAS FRECUENTES
-const pregunta = document.querySelectorAll('.pregunta');
-pregunta.forEach(pregunta =>{
-    pregunta.addEventListener('click', mostrar_respuesta);
+$('.pregunta_A').on('click', function(){
+    $('.respuesta_A').prepend('<p>En el proceso de compra vas a poder indicarnos la fecha de tu envío, cuándo querés que lo entreguemos o si vas a venir a retirarlo personalmente.</p>');
+    $('.respuesta_A').show();
+    $('.pregunta_A').on('click', function(){
+        $('.respuesta_A').hide();
+    })
 });
-function mostrar_respuesta (){
-    $('.respuesta').show();
-};
-
-/*
-$(document).ready(function(){
-    $('.respuesta_A').click(function (e){
-        e.preventDefault();
-        alert("hola");
-    });
-});*/
-
-
+$('.pregunta_B').on('click', function(){
+    $('.respuesta_B').prepend('<p>Todas las piezas de pastelería son super frescas y duran en las cajas que enviamos más heladera perfectamente una semana.</p>');
+    $('.respuesta_B').show();
+    $('.pregunta_B').on('click', function(){
+        $('.respuesta_B').hide();
+    })
+});
+$('.pregunta_C').on('click', function(){
+    $('.respuesta_C').prepend('<p>Debes realizarlo con 48 hs de anticipación como mínimo.</p>');
+    $('.respuesta_C').show();
+    $('.pregunta_C').on('click', function(){
+        $('.respuesta_C').hide();
+    })
+});
+$('.pregunta_D').on('click', function(){
+    $('.respuesta_D').prepend('<p>En el proceso de compra, vas a poder indicarnos tu domicilio y ver el costo correspondiente del mismo. Ingresando en la sección "Delivery" podes fijarte si llegamos hasta tu domicilio.</p>');
+    $('.respuesta_D').show();
+    $('.pregunta_D').on('click', function(){
+        $('.respuesta_D').hide();
+    })
+});
+$('.pregunta_E').on('click', function(){
+    $('.respuesta_E').prepend('<p>No, todos los pedidos, ya sean para delivery o para Retirar por el mostrador dulce, se deben realizar mínimo con 24hs de anticipación.</p>');
+    $('.respuesta_E').show();
+    $('.pregunta_E').on('click', function(){
+        $('.respuesta_E').hide();
+    })
+});
+$('.pregunta_F').on('click', function(){
+    $('.respuesta_F').prepend('<p>Primero, tenés que saber los días de entrega de tu zona y la franja horaria correspondiente a cada una. Luego, si querés recibir o enviar tu pedido al día siguiente debés realizar la compra antes de las 18hs del día anterior.</p>');
+    $('.respuesta_F').show();
+    $('.pregunta_F').on('click', function(){
+        $('.respuesta_F').hide();
+    })
+});
 
 
 //FORMULARIO DE CONTACTO

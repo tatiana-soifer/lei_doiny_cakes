@@ -183,6 +183,11 @@ header {
   padding-bottom: 5%;
 }
 
+.nosotros {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
 .nosotros .amor_firma {
   text-align: center;
 }
@@ -556,12 +561,14 @@ header {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   padding: 2%;
+  padding-top: 4%;
 }
 
 .clientes_felices .caja p {
   color: #9b8b8b;
   font-family: 'Montserrat', sans-serif;
   padding: 2%;
+  text-align: center;
 }
 
 .preguntas_frecuentes {
