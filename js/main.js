@@ -228,13 +228,8 @@ $('.pregunta_E').on('click', function(){
         $('.respuesta_E').hide();
     })
 });
-$('.pregunta_F').on('click', function(){
-    $('.respuesta_F').prepend('<p>Primero, tenés que saber los días de entrega de tu zona y la franja horaria correspondiente a cada una. Luego, si querés recibir o enviar tu pedido al día siguiente debés realizar la compra antes de las 18hs del día anterior.</p>');
-    $('.respuesta_F').show();
-    $('.pregunta_F').on('click', function(){
-        $('.respuesta_F').hide();
-    })
-});
+
+
 
 
 //FORMULARIO DE CONTACTO
