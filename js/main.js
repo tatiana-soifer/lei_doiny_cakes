@@ -228,7 +228,15 @@ $('.pregunta_E').on('click', function(){
         $('.respuesta_E').hide();
     })
 });
-
+function preguntas_FAQ(){
+    const pregunta_F = document.getElementById('pregunta_F');
+    pregunta_F.onclick = mostrar_respuesta_F;
+    
+}
+function mostrar_respuesta_F (){
+    $('#respuesta_F').prepend('<p>No, todos los pedidos, ya sean para delivery o para Retirar por el mostrador dulce, se deben realizar mínimo con 24hs de anticipación.</p>');
+    $('#respuesta_F').show();
+}
 
 
 

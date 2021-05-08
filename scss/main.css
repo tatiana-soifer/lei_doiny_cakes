@@ -540,7 +540,7 @@ header {
 }
 
 .clientes_felices {
-  padding-bottom: 5%;
+  padding-bottom: 6%;
 }
 
 .clientes_felices .caja {
@@ -562,13 +562,16 @@ header {
   font-weight: bold;
   padding: 2%;
   padding-top: 4%;
+  padding-left: 5%;
 }
 
 .clientes_felices .caja p {
   color: #9b8b8b;
   font-family: 'Montserrat', sans-serif;
+  padding-top: 5%;
   padding: 2%;
   text-align: center;
+  margin-bottom: 0%;
 }
 
 .preguntas_frecuentes {
