@@ -193,50 +193,39 @@ $(document).ready(function(){
 
 
 //PREGUNTAS FRECUENTES
-$('.pregunta_A').on('click', function(){
+$(document).ready(function(){
     $('.respuesta_A').prepend('<p>En el proceso de compra vas a poder indicarnos la fecha de tu envío, cuándo querés que lo entreguemos o si vas a venir a retirarlo personalmente.</p>');
-    $('.respuesta_A').show();
+    $('.respuesta_A').hide();
     $('.pregunta_A').on('click', function(){
-        $('.respuesta_A').hide();
-    })
-});
-$('.pregunta_B').on('click', function(){
+        $('.respuesta_A').toggle();    
+    });
     $('.respuesta_B').prepend('<p>Todas las piezas de pastelería son super frescas y duran en las cajas que enviamos más heladera perfectamente una semana.</p>');
-    $('.respuesta_B').show();
+    $('.respuesta_B').hide();
     $('.pregunta_B').on('click', function(){
-        $('.respuesta_B').hide();
-    })
-});
-$('.pregunta_C').on('click', function(){
+        $('.respuesta_B').toggle();
+    });
     $('.respuesta_C').prepend('<p>Debes realizarlo con 48 hs de anticipación como mínimo.</p>');
-    $('.respuesta_C').show();
+    $('.respuesta_C').hide();
     $('.pregunta_C').on('click', function(){
-        $('.respuesta_C').hide();
-    })
-});
-$('.pregunta_D').on('click', function(){
+        $('.respuesta_F').toggle();    
+    });
     $('.respuesta_D').prepend('<p>En el proceso de compra, vas a poder indicarnos tu domicilio y ver el costo correspondiente del mismo. Ingresando en la sección "Delivery" podes fijarte si llegamos hasta tu domicilio.</p>');
-    $('.respuesta_D').show();
+    $('.respuesta_D').hide();
     $('.pregunta_D').on('click', function(){
-        $('.respuesta_D').hide();
-    })
-});
-$('.pregunta_E').on('click', function(){
+        $('.respuesta_D').toggle();    
+    });
     $('.respuesta_E').prepend('<p>No, todos los pedidos, ya sean para delivery o para Retirar por el mostrador dulce, se deben realizar mínimo con 24hs de anticipación.</p>');
-    $('.respuesta_E').show();
+    $('.respuesta_E').hide();
     $('.pregunta_E').on('click', function(){
-        $('.respuesta_E').hide();
-    })
+        $('.respuesta_E').toggle();    
+    });
+    $('.respuesta_F').prepend('<p>Primero, tenés que saber los días de entrega de tu zona y la franja horaria correspondiente a cada una. Luego, si querés recibir o enviar tu pedido al día siguiente debés realizar la compra antes de las 18hs del día anterior.</p>');
+    $('.respuesta_F').hide();
+    $('.pregunta_F').on('click', function(){
+        $('.respuesta_F').toggle();    
+    });
 });
-function preguntas_FAQ(){
-    const pregunta_F = document.getElementById('pregunta_F');
-    pregunta_F.onclick = mostrar_respuesta_F;
-    
-}
-function mostrar_respuesta_F (){
-    $('#respuesta_F').prepend('<p>No, todos los pedidos, ya sean para delivery o para Retirar por el mostrador dulce, se deben realizar mínimo con 24hs de anticipación.</p>');
-    $('#respuesta_F').show();
-}
+
 
 
 
@@ -270,22 +259,18 @@ $('#btn_enviar').click(function(e){
 const suscripcion = document.querySelector('.suscripcion');
 $(document).ready(function(){
     const APIURL = 'https://jsonplaceholder.typicode.com/posts';
-    const suscripcion = {mail:"leidoinycakes@gmail.com"}
-    $('.suscripcion').prepend(`<div class="suscripcion">
-                                <h5>Newsletter</h5>
+    const suscripcion = {mail:"Mail enviado con exito"}
+    $('.suscripcion').prepend(`<h5>Newsletter</h5>
                                 <h6>Dejanos tu mail y recibí las novedades!</h6>
                                 <input type="text" placeholder="E-mail">
-                                <button id="boton_suscripcion">
-                                    <img src="img/send.png" alt="send" title="send">
-                                </button>
-                            </div>`);
+                                <img src="img/send.png" id="boton_suscripcion" alt="send" title="send">`);
     $("#boton_suscripcion").click(()=>{
         $.ajax({
             method: "POST",
             url: APIURL,
             data: suscripcion,
             success: function (respuesta){
-                $('.suscripcion').prepend(`<div>${respuesta}</div>`);
+                $('.suscripcion').prepend(`<div>${respuesta.mail}</div>`);
             }
         });
     });

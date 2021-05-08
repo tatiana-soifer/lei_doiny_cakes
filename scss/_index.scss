@@ -115,6 +115,9 @@ header{
     justify-self: center;
     display: -webkit-box;
     align-items: center;
+    img{
+        justify-content: space-around;
+    }
 }
 .copy{
     grid-area: copy;

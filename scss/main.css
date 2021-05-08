@@ -124,6 +124,11 @@ header {
           align-items: center;
 }
 
+.sociales img {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .copy {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
