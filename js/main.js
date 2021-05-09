@@ -138,28 +138,8 @@ $('#btn_finalizar_compra').click(function(e){
 
 
 //FUNCION INFO DESCRIPCION DE TORTAS
-const info = document.querySelector('#info');
-const tooltip = document.querySelector('#tooltip');
-const popperInstance = Popper.createPopper(info, tooltip);
-
-function show() {
-    tooltip.setAttribute('data-show', '');
-    popperInstance.update();
-};
-
-function hide() {
-    tooltip.removeAttribute('data-show');
-};
-
-const showEvents = ['mouseenter', 'focus'];
-const hideEvents = ['mouseleave', 'blur'];
-
-showEvents.forEach (event => {
-    info.addEventListener(event, show)
-});
-
-hideEvents.forEach (event => {
-    info.addEventListener(event, hide)
+$(function(){
+    $('[data-toggle="popover"]').popover()
 });
 
 
@@ -175,19 +155,19 @@ $(document).ready(function(){
 		function ocultar_producto(){
 			$('.producto_item').hide();
 		}
-        setTimeout(ocultar_producto,400);
+        setTimeout(ocultar_producto, 400);
         function mostrar_producto(){
 			$('.producto_item[category="'+categoria_producto+'"]').show();
 			$('.producto_item[category="'+categoria_producto+'"]').css('transform', 'scale(1)');
 		}
-        setTimeout(mostrar_producto,400);
+        setTimeout(mostrar_producto, 400);
 	});
     $('.categoria_item[category="todos"]').click(function(){
 		function mostrar_todo(){
 			$('.producto_item').show();
 			$('.producto_item').css('transform', 'scale(1)');
 		} 
-        setTimeout(mostrar_todo,400);
+        setTimeout(mostrar_todo, 400);
 	});
 });
 
@@ -207,7 +187,7 @@ $(document).ready(function(){
     $('.respuesta_C').prepend('<p>Debes realizarlo con 48 hs de anticipación como mínimo.</p>');
     $('.respuesta_C').hide();
     $('.pregunta_C').on('click', function(){
-        $('.respuesta_F').toggle();    
+        $('.respuesta_C').toggle();    
     });
     $('.respuesta_D').prepend('<p>En el proceso de compra, vas a poder indicarnos tu domicilio y ver el costo correspondiente del mismo. Ingresando en la sección "Delivery" podes fijarte si llegamos hasta tu domicilio.</p>');
     $('.respuesta_D').hide();

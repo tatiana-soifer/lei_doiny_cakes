@@ -24,36 +24,27 @@
     img{
         padding-bottom: 5%;
         padding-top: 2%;
-        justify-self: center;        
-        display: flex;
-        justify-content: center;
+        display: block;
+        margin: auto;
     }
 }
 .tarjetas{
     grid-area: tarjetas;
     justify-self: center;
     img{
-        margin-left: 40%;
         padding-bottom: 5%;
         padding-top: 2%;
-        /*
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        */
+        display: block;
+        margin: auto;
     }
 }
 .envios{
     grid-area: envios;
     justify-self: center;
     img{
-        margin-left: 35%;
         padding-bottom: 5%;
         padding-top: 2%;
-        /*
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        */
+        display: block;
+        margin: auto;
     }
 }

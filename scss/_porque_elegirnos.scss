@@ -24,22 +24,35 @@
     grid-area: amor;
     justify-self: end;
     width: 50%;
+    img{
+        display: block;
+        margin: auto;
+    }
 }
 .frescos{
     grid-area: frescos;
     justify-self: end;
     width: 50%;
+    img{
+        display: block;
+        margin: auto;
+    }
 }
 .calidad{
     grid-area: calidad;
     justify-self: end;
     width: 50%;
+    img{
+        display: block;
+        margin: auto;
+    }
 }
 .artesanal{
     grid-area: artesanal;
     justify-self: end;
     width: 50%;
     img{
-        justify-content: center;
+        display: block;
+        margin: auto;
     }
 }

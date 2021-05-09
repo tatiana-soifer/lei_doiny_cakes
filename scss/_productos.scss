@@ -5,13 +5,12 @@
 .menu_listado{
     display: flex;
     padding-bottom: 2%;
-    justify-content: center;
+    justify-content: space-around;
     li{
         list-style: none;
         text-align: center;
         color: #5A5A5A;
         display:inline;
-        padding-left: 2%;
     }
 }
 
@@ -38,21 +37,23 @@
     }
 }
 
-//POPPER DESCRIPCION
-#info{
+//DESCRIPCION DE LOS PRODUCTOS
+#descripcion{
     border: none;
     background: none;
 }
-#tooltip{
-    display: none;
-    background: linear-gradient(114.48deg, #D8D8D8 9.06%, rgba(216, 216, 216, 0.3) 90.08%);
-    color: white;
-    padding: 4px 8px;
+.popover{
     border-radius: 17px;
     border: 1px solid #F22973;
-    z-index: 100;
+    .arrow{
+        border: 1px solid #F22973;
+    }
+    div{
+        background: linear-gradient(114.48deg, #D8D8D8 9.06%, rgba(216, 216, 216, 0.3) 90.08%);
+        color: #5A5A5A;
+    }
 }
-#tooltip[data-show] {
-    display: block;
-}
+#popover396868{
+    background: linear-gradient(114.48deg, #D8D8D8 9.06%, rgba(216, 216, 216, 0.3) 90.08%);
 
+}

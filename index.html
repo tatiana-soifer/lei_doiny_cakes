@@ -34,7 +34,7 @@
                                     <a class="navbar-brand" href="#como_comprar">Cómo comprar</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="navbar-brand" href="#formulario" >Contacto</a>
+                                    <a class="navbar-brand" href="#contacto" >Contacto</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="navbar-brand" href="#FAQ" >FAQ</a>
@@ -60,6 +60,7 @@
 
         <div id="fondo_degrade">
             <!--COMO COMPRRAR-->
+            <a name="como_comprar" />
             <div class="como_comprar" name="como_comprar">
                 <h2>Cómo comprar</h2>
                 <div class="grid_como_comprar">
@@ -82,15 +83,18 @@
             </div>
 
             <!--MENU DE PRODUCTOS-->
+            <a name="menu" />
             <div class="menu_productos">
                 <div class="container">
                     <h2>Explorá nuestro menú</h2>
                     <div class="menu_listado">
-                        <li class="categoria_item" category="todos">Todos</li>
-                        <li class="categoria_item" category="tortas">Tortas</li>
-                        <li class="categoria_item" category="desayunos_meriendas">Desayunos y Meriendas</li>
-                        <li class="categoria_item" category="letter_cakes">Letter Cake</li>
-                        <li class="categoria_item" category="shots">Shots</li>
+                        <ol>
+                            <li class="categoria_item" category="todos">Todos</li>
+                            <li class="categoria_item" category="tortas">Tortas</li>
+                            <li class="categoria_item" category="desayunos_meriendas">Desayunos y Meriendas</li>
+                            <li class="categoria_item" category="letter_cakes">Letter Cake</li>
+                            <li class="categoria_item" category="shots">Shots</li>
+                        </ol>
                     </div>
                     <!--ALERTA PRODCUTO AÑADIDO-->
                     <div class="alert container position-sticky top-0 alert-primary hide" role="alert">Producto añadido al carrito!</div>
@@ -105,12 +109,9 @@
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Choco-oreo</h3>
-                                        <button id="info" aria-describedby="tooltip">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: Es la mezcla perfecta entre la Chocotorta y la Doble Oreo. Una bomba explosiva que hay que probar. Tamaño: Molde 26cm">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
-                                        <div id="tooltip" role="tooltip">
-                                            <p><b>Descripción:</b> Es la mezcla perfecta entre la Chocotorta y la Doble Oreo. Una bomba explosiva que hay que probar. <b>Tamaño:</b> Molde 26cm</p>
-                                        </div>
                                         <h4 class="precio">$ 1850</h4>
                                         <div>
                                             <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -125,12 +126,9 @@
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Doble Oreo</h3>
-                                        <button id="info" aria-describedby="tooltip">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: Dos capas de Oreo, dulce de leche y crema chantillí. Tamaño: Molde 26cm">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
-                                        <div id="tooltip" role="tooltip">
-                                            <p><b>Descripción:</b> Dos capas de Oreo, dulce de leche y crema chantillí. <b> Tamaño:</b> Molde 26cm</p>
-                                        </div>
                                         <h4 class="precio">$ 1800</h4>
                                         <div>
                                             <button class="btn btn-secondary boton ml-auto" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -145,12 +143,9 @@
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Praline</h3>
-                                        <button id="info" aria-describedby="tooltip">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: Crema pastelera de chocolate y praline de frutos secos. Tamaño: Molde 26cm">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
-                                        <div id="tooltip" role="tooltip">
-                                        <p><b>Descripción:</b> Crema pastelera de chocolate y praline de frutos secos. <b> Tamaño:</b> Molde 26cm</p>
-                                        </div>                                            
                                         <h4 class="precio">$ 1750</h4>
                                         <div>
                                             <button class="btn btn-secondary boton ml-auto" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -165,12 +160,9 @@
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Franui</h3>
-                                        <button id="info" aria-describedby="tooltip">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción:  Base crocante de chocolate, con una mousse de chocolate negro y mousse de frambuesa, bañada en chocolate blanco. Tamaño: Molde 26cm">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
-                                        <div id="tooltip" role="tooltip">
-                                            <p><b>Descripción:</b> Cheescake con base crocante, crema de limon y frutos rojos. <b>Tamaño:</b> Molde 26cm</p>
-                                        </div>
                                         <h4 class="precio">$ 1950</h4>
                                         <div>
                                             <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -185,12 +177,9 @@
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Mousse</h3>
-                                        <button id="info" aria-describedby="tooltip">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: Clásica mousse de chocolate negro, con una base de brownie humedo y chocolate amargo rallado por arriba. Tamaño: Molde 26cm">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
-                                        <div id="tooltip" role="tooltip">
-                                            <p><b>Descripción:</b> Clásica mousse de chocolate negro, con una base de brownie humedo y chocolate amargo rallado por arriba.<b>Tamaño:</b> Molde 26cm</p>
-                                        </div>
                                         <h4 class="precio">$ 1800</h4>
                                         <div>
                                             <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -205,12 +194,9 @@
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Marquisse</h3>
-                                        <button id="info" aria-describedby="tooltip">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: Brownie húmedo, dulce de leche, crema chantillí o merengue Italiaano y lluvia de chocolate. Tamaño: Molde 26cm">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
-                                        <div id="tooltip" role="tooltip">
-                                            <p><b>Descripción:</b> Brownie húmedo, dulce de leche, crema chantillí o merengue Italiaano y lluvia de chocolate. <b>Tamaño:</b> Molde 26cm</p>
-                                        </div>
                                         <h4 class="precio">$ 1350</h4>
                                         <div>
                                             <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -225,12 +211,9 @@
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Cheesecake</h3>
-                                        <button id="info" aria-describedby="tooltip">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: Cheescake con base crocante, crema de limon y frutos rojos. Tamaño: Molde 26cm">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
-                                        <div id="tooltip" role="tooltip">
-                                            <p><b>Descripción:</b>Cheescake con base crocante, crema de limon y frutos rojos. <b>Tamaño:</b> Molde 26cm</p>
-                                        </div>
                                         <h4 class="precio">$ 1800</h4>
                                         <div>
                                             <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -245,12 +228,9 @@
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Crumble</h3>
-                                        <button id="info" aria-describedby="tooltip">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: Base de masa quebrada dulce, manzana y un crumble crocante. Tamaño: Molde 26cm">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
-                                        <div id="tooltip" role="tooltip">
-                                            <p><b>Descripción:</b> Base de masa quebrada dulce, manzana y un crumble crocante. <b>Tamaño:</b> Molde 26cm</p>
-                                        </div>
                                         <h4 class="precio">$ 1800</h4>
                                         <div>
                                             <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -268,12 +248,9 @@
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Simple</h3>
-                                        <button id="info" aria-describedby="tooltip">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: 2 mini tortas a elección (coco con dulce de leche o sable), un jugo, dos muffins y un brownie bien húmedo.">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
-                                        <div id="tooltip" role="tooltip">
-                                            <p><b>Descripción:</b> 2 mini tortas a elección (coco con dulce de leche o sable), un jugo, dos muffins y un brownie bien húmedo.</p>
-                                        </div>
                                         <h4 class="precio">$ 1500</h4>
                                         <div>
                                             <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -288,12 +265,9 @@
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Pareja</h3>
-                                        <button id="info" aria-describedby="tooltip">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: 2 mini tortas a elección (coco con dulce de leche o sable), 2 jugos, 4 muffins, 2 brownies húmedos.">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
-                                        <div id="tooltip" role="tooltip">
-                                            <p><b>Descripción:</b> 2 mini tortas a elección (coco con dulce de leche o sable), 2 jugos, 4 muffins, 2 brownies húmedos.</p>
-                                        </div>
                                         <h4 class="precio">$ 2000</h4>
                                         <div>
                                             <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -308,12 +282,9 @@
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Niños</h3>
-                                        <button id="info" aria-describedby="tooltip">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: 1 mini chocotorta, 2 chocolatadas Nesquik, 4 muffins, 2 brownies húmedos, galletitas de vainilla y productos para decorar las mismas.">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
-                                        <div id="tooltip" role="tooltip">
-                                            <p><b>Descripción:</b> 1 mini chocotorta, 2 chocolatadas Nesquik, 4 muffins, 2 brownies húmedos, galletitas de vainilla y productos para decorar las mismas.</p>
-                                        </div>
                                         <h4 class="precio">$ 2500</h4>
                                         <div>
                                             <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -328,12 +299,9 @@
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Completo</h3>
-                                        <button id="info" aria-describedby="tooltip">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: 2 mini tortas a elección (coco con dulce de leche o sable), 2 jugos, 4 muffins, 2 brownies húmedos, 2 granolas, un paquete de talitas.">
                                             <img src="img/informacion.png" alt="informacion">
-                                        </button>
-                                        <div id="tooltip" role="tooltip">
-                                            <p><b>Descripción:</b> 2 mini tortas a elección (coco con dulce de leche o sable), 2 jugos, 4 muffins, 2 brownies húmedos, 2 granolas, un paquete de talitas.</p>
-                                        </div>                                        
+                                        </button>                             
                                             <h4 class="precio">$ 3000</h4>
                                         <div>
                                             <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -351,12 +319,9 @@
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Chocotorta</h3>
-                                        <button id="info" aria-describedby="tooltip">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: Es la clásica chocotorta con forma de letra o número decorada de manera personalizada con golosinas o alguna temática en particular. Tamaño: 21cm x 15cm aproximadamente.">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
-                                        <div id="tooltip" role="tooltip">
-                                            <p><b>Descripción:</b> Es la clásica chocotorta con forma de letra o número decorada de manera personalizada con golosinas o alguna temática en particular.<b>Tamaño:</b>21cm x 15cm aproximadamente</p>
-                                        </div>
                                         <h4 class="precio">$ 2500</h4>
                                         <div>
                                             <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -371,12 +336,9 @@
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Marquisse</h3>
-                                        <button id="info" aria-describedby="tooltip">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: Torta en forma de número, de brownie húmedo, dulce de leche, crema chantillí o merengue Italiaano y lluvia de golosinas. Tamaño: 21cm x 15cm aproximadamente.">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
-                                        <div id="tooltip" role="tooltip">
-                                            <p><b>Descripción:</b> Torta en forma de número, de brownie húmedo, dulce de leche, crema chantillí o merengue Italiaano y lluvia de golosinas. <b>Tamaño:</b> 21cm x 15cm aproximadamente</p>
-                                        </div>
                                         <h4 class="precio">$ 2600</h4>
                                         <div>
                                             <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -384,22 +346,17 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
                         <!--CUADRICULA SHOTS-->
-                        <div class="cuadricula_productos">
                             <div class="col-lg-3 col-md-6 col-sm-12 mb-4 producto_item" category="shots">
                                 <div class="card shadow mb-1 rounded">
                                     <div class="card_show">
-                                        <img src="img/shots.png" class="card-img-top" alt="">
+                                        <img src="img/shots.png" class="card-img-top" alt="shots dulces surtidos">
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Caja de Shots Surtidos x 24 unidades</h3>
-                                        <button id="info" aria-describedby="tooltip">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: Incluye 6 shots de Chocotorta, 6 shots de Lemmon Pie, 6 shots de Marquisse, y 6 shots de Cheescake.">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
-                                        <div id="tooltip" role="tooltip">
-                                            <p><b>Descripción:</b> Incluye 6 shots de Chocotorta, 6 shots de Lemmon Pie, 6 shots de Marquisse, y 6 shots de Cheescake</p>
-                                        </div>
                                         <h4 class="precio">$ 4000</h4>
                                         <div>
                                             <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
@@ -414,13 +371,10 @@
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Caja de Shots Surtidos x 60 unidades</h3>
-                                        <button id="info" aria-describedby="tooltip">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: Incluye 10 shots de Chocotorta, 10 shots de Lemmon Pie, 10 shots de Marquisse, 10 shots de Cheescake, 10 shots de Bon o Bon, y 10 shots de Banana Split.">
                                             <img src="img/informacion.png" alt="informacion">
-                                        </button>
-                                        <div id="tooltip" role="tooltip">
-                                            <p><b>Descripción:</b> Incluye 10 shots de Chocotorta, 10 shots de Lemmon Pie, 10 shots de Marquisse, 10 shots de Cheescake, 10 shots de Bon o Bon, y 10 shots de Banana Split</p>
-                                        </div>                                        
-                                            <h4 class="precio">$ 5000</h4>
+                                        </button>                                     
+                                        <h4 class="precio">$ 5000</h4>
                                         <div>
                                             <button class="btn btn-secondary boton" data-toggle="modal" id="boton_modal">Añadir</button>
                                         </div>                                        
@@ -569,6 +523,7 @@
             </div>
 
             <!--PREGUNTAS FRECUENTES-->
+            <a name="FAQ" />
             <div class="preguntas_frecuentes" name="FAQ">
                 <h2>Preguntas frecuentes</h2>
                 <div class="container">
@@ -634,6 +589,7 @@
         </div>
 
                 <!--FORMULARIO DE CONTACTO-->
+            <a name="contacto" />
             <form id="formulario">
                 <h2>Tenes algúna duda? Contanos!</h2>
                 <div class="container">
@@ -742,8 +698,6 @@
 
             <!--JQUERY-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-            <!--POPPER-->
-        <script src="https://unpkg.com/@popperjs/core@2"></script>
             <!--BOOTSTRAP-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
             <!--SWEETALERT-->
