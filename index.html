@@ -21,7 +21,7 @@
                     <!--LOGO-->
                     <img src="img/logo.png" alt="logo" id="logo">
                     <!--MENU-->
-                    <nav class="navbar navbar-expand-lg sticky-top bg-light ml-auto position-sticky top-0">
+                    <nav class="navbar navbar-expand-lg sticky-top bg-light ml-auto">
                         <button class="navbar-toggler" id="borde_boton" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -40,7 +40,7 @@
                                     <a class="navbar-brand" href="#FAQ" >FAQ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                                    <button id="carrito_menu" type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
                                         <img src="img/carrito.png" alt="carrito de compras">
                                     </button>
                                 </li>
@@ -248,7 +248,7 @@
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Simple</h3>
-                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: 2 mini tortas a elección (coco con dulce de leche o sable), un jugo, dos muffins y un brownie bien húmedo.">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: 2 mini tortas a elección (coco con dulce de leche o sablé), un jugo, dos muffins y un brownie bien húmedo.">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
                                         <h4 class="precio">$ 1500</h4>
@@ -265,7 +265,7 @@
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Pareja</h3>
-                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: 2 mini tortas a elección (coco con dulce de leche o sable), 2 jugos, 4 muffins, 2 brownies húmedos.">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: 2 mini tortas a elección (coco con dulce de leche o sablé), 2 jugos, 4 muffins, 2 brownies húmedos.">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>
                                         <h4 class="precio">$ 2000</h4>
@@ -299,7 +299,7 @@
                                     </div>
                                     <div class="card-body">
                                         <h3 class="card-title">Completo</h3>
-                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: 2 mini tortas a elección (coco con dulce de leche o sable), 2 jugos, 4 muffins, 2 brownies húmedos, 2 granolas, un paquete de talitas.">
+                                        <button id="descripcion" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Descripción: 2 mini tortas a elección (coco con dulce de leche o sablé), 2 jugos, 4 muffins, 2 brownies húmedos, 2 granolas, un paquete de talitas.">
                                             <img src="img/informacion.png" alt="informacion">
                                         </button>                             
                                             <h4 class="precio">$ 3000</h4>
@@ -450,9 +450,9 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
                             <h2>¿Quiénes somos?</h2>
-                            <p>Soy Leila Doiny, tengo 26 años, soy Licenciada en Administración de empresas y próximamente Licenciada en Gastronomía en IAG (y muy fan).</p>
-                            <p> Empecé con este emprendimiento como hobbie, y desde hace ya 3 años que pasó a ser mi trabajo y una parte muy importante de mi vida. No solo cocino, sino también llevo amor en forma de comida rica a sus casas. Y si hay algo que me gusta, es que ustedes valoren estos aspectos de igual forma que yo.</p>
-                            <p>Tengo la suerte de poder dedicarme a lo que me gusta, y que cada día crezca más, (incluso más de lo que me podía imaginar) y se lo debo a ustedes que están del otro lado. Cómo les digo siempre, gracias por dejarme ser parte de sus momentos y recuerdos, GRACIAS por dejarme entrar a sus casas y por ser siempre los mejores críticos del mundo.</p>
+                            <p><b>Soy Leila Doiny,</b> tengo 26 años, soy Licenciada en Administración de empresas y próximamente <b>Licenciada en Gastronomía en IAG </b>(y muy fan).</p>
+                            <p> Empecé con este emprendimiento como hobbie, y desde hace ya 3 años que pasó a ser mi trabajo y una parte muy importante de mi vida. No solo cocino, sino también <b>llevo amor en forma de comida rica a sus casas.</b> Y si hay algo que me gusta, es que ustedes valoren estos aspectos de igual forma que yo.</p>
+                            <p>Tengo la suerte de poder dedicarme a lo que me gusta, y que cada día crezca más, (incluso más de lo que me podía imaginar) y se lo debo a ustedes que están del otro lado. Cómo les digo siempre, <b>gracias por dejarme ser parte de sus momentos y recuerdos, GRACIAS por dejarme entrar a sus casas y por ser siempre los mejores críticos del mundo.</b></p>
                             <p class="amor_firma">¡Los quiero!</p>
                             <h3>Lei Doiny</h3>
                         </div>
@@ -596,31 +596,35 @@
             <a name="contacto" />
             <form id="formulario">
                 <h2>Tenes algúna duda? Contanos!</h2>
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-4 col-md-12">
+                        <div class="col-lg-6 col-md-12">
                             <img src="img/porcion_doble_oreo.png" alt="porcion doble oreo">
                         </div>
-                        <div class="col-lg-4 col-md-12">
-                            <div class="form-group">
-                                <label for="formGroupExampleInput">Nombre</label>
-                                <input type="text" name="Nombre" class="form-control" id="texto_contacto_nombre nombre" placeholder="Introducir el nombre" required>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Nombre</label>
+                                    <input type="text" name="Nombre" class="form-control" id="texto_contacto_nombre nombre" placeholder="Introducir el nombre" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12 ml-auto">
-                            <div class="form-group">
-                                <label for="formGroupExampleInput2">E-Mail</label>
-                                <input type="text" name="Mail" class="form-control" id="formGroupExampleInput2 texto_contacto_mail" placeholder="ejemplo@gmail.com" required>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">E-Mail</label>
+                                    <input type="text" name="Mail" class="form-control" id="formGroupExampleInput2 texto_contacto_mail" placeholder="ejemplo@gmail.com" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-12 ml-auto">
-                            <div class="form-group">
-                                <label for="formGroupExampleInput2">Celular</label>
-                                <input type="number" name="Celular" class="form-control" id="formGroupExampleInput2 numero_contacto_celular" placeholder="Introducir el celular" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="formGroupExampleInput2">Mensaje</label>
-                                <input class="form-control" name="Mensaje" rows="3" id="exampleFormControlTextarea1 texto_contacto_mensaje" placeholder="Dejanos tu mensaje">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">Celular</label>
+                                    <input type="number" name="Celular" class="form-control" id="formGroupExampleInput2 numero_contacto_celular" placeholder="Introducir el celular" required>
+                                </div>
+                            </div>  
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">Mensaje</label>
+                                    <input class="form-control" name="Mensaje" rows="3" id="exampleFormControlTextarea1 texto_contacto_mensaje" placeholder="Dejanos tu mensaje">
+                                </div>
                             </div>  
                             <div class="form-group">
                                 <input type="submit" value="Enviar" class="btn btn-secondary text-uppercase" id="btn_enviar">

@@ -67,6 +67,10 @@ header {
   color: white;
 }
 
+#carrito_menu {
+  background: none;
+}
+
 .grid_footer {
   padding-top: 2%;
   display: -ms-grid;
@@ -194,6 +198,7 @@ header {
 
 .nosotros .amor_firma {
   text-align: center;
+  font-weight: bold;
 }
 
 .nosotros h3 {
@@ -205,6 +210,9 @@ header {
 
 .cocinera {
   padding-top: 5%;
+  padding-left: 15%;
+  display: block;
+  margin: auto;
 }
 
 .presentacion {
@@ -224,7 +232,7 @@ header {
   color: #F22973;
   width: 50%;
   height: 164px;
-  top: 20%;
+  top: 45%;
 }
 
 .presentacion .p_presentacion {
@@ -250,6 +258,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 5%;
 }
 
 .menu_listado {
@@ -283,11 +292,13 @@ header {
 
 .cuadricula_productos .card {
   border-radius: 17px 17px 17px 17px !important;
+  border: none;
 }
 
 .cuadricula_productos .card-body {
   background-color: #F3D6E1;
   border-radius: 0px 0px 17px 17px;
+  border-color: none;
 }
 
 .cuadricula_productos .card-body button {
@@ -488,6 +499,9 @@ header {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "amor frescos" "calidad artesanal";
+  padding-right: 5%;
+  padding-left: 8%;
+  padding-top: 5%;
   padding-bottom: 5%;
 }
 

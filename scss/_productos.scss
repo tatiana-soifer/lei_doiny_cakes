@@ -1,6 +1,7 @@
 //MENU DE PRODUCTOS
 .menu_productos{
     display: flex;
+    padding-bottom: 5%;
 }
 .menu_listado{
     display: flex;
@@ -22,10 +23,12 @@
     flex-wrap: wrap;
     .card{
         border-radius: 17px 17px 17px 17px!important;
+        border: none;
     }
     .card-body{
         background-color: #F3D6E1;
         border-radius: 0px 0px 17px 17px;
+        border-color: none;
         button{
             float: right;
         }
