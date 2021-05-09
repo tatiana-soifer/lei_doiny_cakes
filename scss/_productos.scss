@@ -7,11 +7,18 @@
     display: flex;
     padding-bottom: 2%;
     justify-content: space-around;
+    li:hover{
+        color: #F22973;
+    }
     li{
         list-style: none;
         text-align: center;
         color: #5A5A5A;
         display:inline;
+        padding: 2%;
+    }
+    ol{
+        width: 50%;
     }
 }
 

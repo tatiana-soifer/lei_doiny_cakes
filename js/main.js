@@ -1,9 +1,23 @@
-//VARIABLES GLOBALES
+//ESTILOS DEL NAVBAR
+$(window).scroll(function() {
+    if ($("#menu2").offset().top > 800) {
+        $("#menu2").addClass('fondo_nav');
+    } else {
+        $("#menu2").removeClass('fondo_nav');
+    }
+});
+
+
+
+
+//COMIENZA EL CARRITO DE COMPRAS
+
+//VARIABLES GLOBALES PARA EL CARRITO
 const boton_agregar = document.querySelectorAll('.boton');
 const tbody = document.querySelector('.tbody');
 let carrito = [];
 
-//BOTON PARA AGREGAR DESDE PRODUCTOS AL CARRITO 
+//BOTON PARA AGREGAR PRODUCTOS AL CARRITO 
 boton_agregar.forEach(btn => {
     btn.addEventListener('click', agregar_carrito);
 });
@@ -112,7 +126,7 @@ function item_borrar_carrito(e){
     total_carrito();
 };
 
-//FUNCION LOCAL STORAGE
+//FUNCION LOCAL STORAGE PARA GUARDAR LOS PRODUCTOS SELECCIONADOS UNA VEZ QUE SE CIERRA EL NAVEGADOR
 function addLocalStorage(){
     localStorage.setItem('carrito', JSON.stringify(carrito))
 };
@@ -128,8 +142,8 @@ window.onload = function(){
 $('#btn_finalizar_compra').click(function(e){
     e.preventDefault();
     swal({
-        title: '¡Muchas gracias por comprar en Lei Doiny Cakes!',
-        text: 'A la brevedad nos estaremos comunicando con usted',
+        title: '¡Muchas gracias por confiar en nosotros!',
+        text: 'Pronto nos estaremos comunicando con vos',
         icon: "success",
         button: false,
         timer: 5000,
@@ -137,10 +151,6 @@ $('#btn_finalizar_compra').click(function(e){
 });
 
 
-//FUNCION INFO DESCRIPCION DE TORTAS
-$(function(){
-    $('[data-toggle="popover"]').popover()
-});
 
 
 //MENU DE PRODUCTOS
@@ -170,6 +180,16 @@ $(document).ready(function(){
         setTimeout(mostrar_todo, 400);
 	});
 });
+
+
+
+
+//FUNCION INFO DESCRIPCION DE TORTAS
+$(function(){
+    $('[data-toggle="popover"]').popover()
+});
+
+
 
 
 //PREGUNTAS FRECUENTES

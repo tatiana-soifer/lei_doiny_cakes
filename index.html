@@ -16,38 +16,36 @@
     </head>
     <body id="fondo">
         <header>
-            <div class="container-fluid barra">
-                <div class="row">
-                    <!--LOGO-->
-                    <img src="img/logo.png" alt="logo" id="logo">
-                    <!--MENU-->
-                    <nav class="navbar navbar-expand-lg sticky-top bg-light ml-auto">
-                        <button class="navbar-toggler" id="borde_boton" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item">
-                                    <a class="navbar-brand" href="#menu">Menú</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="navbar-brand" href="#como_comprar">Cómo comprar</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="navbar-brand" href="#contacto" >Contacto</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="navbar-brand" href="#FAQ" >FAQ</a>
-                                </li>
-                                <li class="nav-item">
-                                    <button id="carrito_menu" type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
-                                        <img src="img/carrito.png" alt="carrito de compras">
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
+            <div class="barra">
+                <!--LOGO-->
+                <img src="img/logo.png" alt="logo" id="logo">
+                <!--MENU-->
+                <nav id="menu2" class="navbar navbar-expand-lg fixed-top fondo_presentacion fondo_nav">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+                            <li class="nav-item">
+                                <a class="navbar-brand" href="#menu">Menú</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-brand" href="#como_comprar">Cómo comprar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-brand" href="#formulario">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-brand" href="#FAQ">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <button id="carrito_menu" type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                                    <img src="img/carrito.png" alt="carrito de compras">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </header>
         
@@ -479,7 +477,7 @@
                                         <div class="row">
                                             <div class="col-md-4 col-sm-12">
                                                 <div class="caja">
-                                                    <p>Las tortas estaban riquísimas!! A todos los invitados les gustaron un montón!!</p>
+                                                    <p>Las tortas estaban riquísimas!! A mis invitados les gustaron un montón!!</p>
                                                     <h5>Sofi 18 años</h5>
                                                 </div>
                                             </div>
@@ -501,7 +499,7 @@
                                         <div class="row">    
                                             <div class="col-md-4 col-sm-12">
                                                 <div class="caja">
-                                                    <p>Me encantan!! Soy muy fan!!!</p>
+                                                    <p>Me encantan!! Soy muy fan, siempre me salvan!!!</p>
                                                     <h5>Eva 28 años</h5>
                                                 </div>
                                             </div>
@@ -593,10 +591,10 @@
         </div>
 
                 <!--FORMULARIO DE CONTACTO-->
-            <a name="contacto" />
+            <a name="formulario" />
             <form id="formulario">
                 <h2>Tenes algúna duda? Contanos!</h2>
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
                             <img src="img/porcion_doble_oreo.png" alt="porcion doble oreo">
@@ -635,56 +633,63 @@
             </form>
 
                 <!--FOOTER-->
-            <footer>
-                <div class="grid_footer">
-                    <!--CONTACTO-->
-                    <div class="contacto">
-                        <h5>Contacto</h5>
-                        <ol>
-                            <li>
-                                <img src="img/telefono.png" alt="telefono">
-                                <p>011 7367 1776</p>
-                            </li>
-                            <li>
-                                <img src="img/mail.png" alt="mail">
-                                <p>leidoiny@gmail.com</p>
-                            </li>
-                            <li>
-                                <img src="img/ubicacion.png" alt="ubicacion">
-                                <p> Villa Crespo, CABA</p>
-                            </li>
-                        </ol>
-                    </div>
-                    <!--METODOS DE PAGO-->
-                    <div class="pago">
-                        <h5>Medios de pago</h5>
-                        <div class="grid_pago">
-                            <div>
-                                <img src="img/visa.png" alt="metodo de pago visa">
-                            </div>
-                            <div>
-                                <img src="img/amex.png" alt="metodo de pago amex">
-                            </div>
-                            <div>
-                                <img src="img/mercado_pago.png" alt="metodo de pago mercado pago">
-                            </div>
-                            <div>
-                                <img src="img/mastercard.png" alt="metodo de pago mastercard">
-                            </div>
-                            <div>
-                                <img src="img/diners.png" alt="metodo de pago diners">
-                            </div>
-                            <div>
-                                <img src="img/cabal.png" alt="metodo de pago cabal">
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <!--CONTACTO-->
+                        <div class="contacto">
+                            <h5>Contacto</h5>
+                            <ol>
+                                <li>
+                                    <img src="img/telefono.png" alt="telefono">
+                                    <p>011 7367 1776</p>
+                                </li>
+                                <li>
+                                    <img src="img/mail.png" alt="mail">
+                                    <p>leidoiny@gmail.com</p>
+                                </li>
+                                <li>
+                                    <img src="img/ubicacion.png" alt="ubicacion">
+                                    <p> Villa Crespo, CABA</p>
+                                </li>
+                            </ol>
+                        </div>
+                        <!--METODOS DE PAGO-->
+                        <div class="pago">
+                            <h5>Medios de pago</h5>
+                            <div class="grid_pago">
+                                <div>
+                                    <img src="img/visa.png" alt="metodo de pago visa">
+                                </div>
+                                <div>
+                                    <img src="img/amex.png" alt="metodo de pago amex">
+                                </div>
+                                <div>
+                                    <img src="img/mercado_pago.png" alt="metodo de pago mercado pago">
+                                </div>
+                                <div>
+                                    <img src="img/mastercard.png" alt="metodo de pago mastercard">
+                                </div>
+                                <div>
+                                    <img src="img/diners.png" alt="metodo de pago diners">
+                                </div>
+                                <div>
+                                    <img src="img/cabal.png" alt="metodo de pago cabal">
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <!--CIERRE DIVS CONTAINERS-->
+                    </div>                    
+                </div>
+
+                    
+                    
                     <!--REDES SOOCIALES-->
                     <div class="center-block">
                         <div class="sociales">
                             <h5>Seguinos en nuestras redes</h5>
                         </div>
-                        <div>
+                        <div class="sociales">
                             <a href="https://web.whatsapp.com/" target="blank">
                                 <img src="img/whatsapp.png" alt="whatsapp" title="whatsapp">
                             </a>
@@ -692,7 +697,7 @@
                                 <img src="img/facebook.png" alt="facebook" title="facebook">
                             </a>
                             <a href="https://www.instagram.com/leidoiny_cakes/?hl=es" target="blank">
-                            <img src="img/instagram.png" alt="instagram" title="instagram">
+                                <img src="img/instagram.png" alt="instagram" title="instagram">
                             </a>
                             <a href="https://www.tiktok.com/" target="blank">
                                 <img src="img/tiktok.png" alt="instagram" title="tiktok">
@@ -702,11 +707,13 @@
                             </a>
                         </div>
                     </div>
-                    <!--SUSCRIPCION-->
-                    <div class="suscripcion"></div>
-                        <!--COPYRIGHT-->
-                    <div class="copy">
-                        <p>Copyright 2021 © TS | Made with ❤️</p>
+                        <!--SUSCRIPCION-->
+                        <div class="suscripcion">
+                        </div>
+                            <!--COPYRIGHT-->
+                        <div class="copy">
+                            <p>Copyright 2021 © TS | Made with ❤️</p>
+                        </div>
                     </div>
                 </div>
             </footer>                
