@@ -166,8 +166,7 @@ header {
 }
 
 #formulario {
-  background-image: url(../img/porcion_doble_oreo.png);
-  background-repeat: no-repeat;
+  background: #DAD8D9;
 }
 
 #formulario h2 {
@@ -220,7 +219,7 @@ header {
   font-family: 'Lobster', cursive;
   text-align: center;
   position: absolute;
-  font-size: 75px;
+  font-size: 64px;
   line-height: 94px;
   color: #F22973;
   width: 50%;
@@ -309,17 +308,18 @@ header {
   border: 1px solid #F22973;
 }
 
-.popover .arrow {
-  border: 1px solid #F22973;
-}
-
 .popover div {
+  border-radius: 17px;
   background: linear-gradient(114.48deg, #D8D8D8 9.06%, rgba(216, 216, 216, 0.3) 90.08%);
-  color: #5A5A5A;
 }
 
 #popover396868 {
   background: linear-gradient(114.48deg, #D8D8D8 9.06%, rgba(216, 216, 216, 0.3) 90.08%);
+}
+
+.bs-popover-auto[x-placement^=bottom] > .arrow::after, .bs-popover-bottom > .arrow::after {
+  border: 1px solid #F22973;
+  border-bottom-color: #f0eded;
 }
 
 .como_comprar {

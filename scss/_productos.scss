@@ -45,15 +45,16 @@
 .popover{
     border-radius: 17px;
     border: 1px solid #F22973;
-    .arrow{
-        border: 1px solid #F22973;
-    }
     div{
+        border-radius: 17px;
         background: linear-gradient(114.48deg, #D8D8D8 9.06%, rgba(216, 216, 216, 0.3) 90.08%);
-        color: #5A5A5A;
     }
 }
 #popover396868{
     background: linear-gradient(114.48deg, #D8D8D8 9.06%, rgba(216, 216, 216, 0.3) 90.08%);
 
+}
+.bs-popover-auto[x-placement^=bottom]>.arrow::after, .bs-popover-bottom>.arrow::after{
+    border: 1px solid #F22973;
+    border-bottom-color: #f0eded;
 }
