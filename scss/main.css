@@ -551,6 +551,10 @@ header {
   padding-bottom: 6%;
 }
 
+.clientes_felices ol {
+  bottom: -45%;
+}
+
 .clientes_felices .caja {
   width: 18rem;
   background: linear-gradient(114.48deg, rgba(216, 216, 216, 0.7) 9.06%, rgba(216, 216, 216, 0.3) 90.08%);
