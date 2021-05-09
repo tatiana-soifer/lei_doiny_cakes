@@ -260,8 +260,8 @@ const suscripcion = document.querySelector('.suscripcion');
 $(document).ready(function(){
     const APIURL = 'https://jsonplaceholder.typicode.com/posts';
     const suscripcion = {mail:"Mail enviado con exito"}
-    $('.suscripcion').prepend(`<h5>Newsletter</h5>
-                                <h6>Dejanos tu mail y recibí las novedades!</h6>
+    $('.suscripcion').prepend(`<h4>Newsletter</h4>
+                                <p>Dejanos tu mail y recibí las novedades!</p>
                                 <input type="text" placeholder="E-mail">
                                 <img src="img/send.png" id="boton_suscripcion" alt="send" title="send">`);
     $("#boton_suscripcion").click(()=>{

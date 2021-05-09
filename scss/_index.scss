@@ -82,18 +82,55 @@ p{
 //FOOTER
 .footer{
     background: #F3D6E1;
-    ;
+    padding-top: 2%;
+    justify-content: space-around;
+    h4{
+        font-weight: bold;
+    }
+    p{
+        font-size: 14px;
+    }
 }
 .contacto{
+    max-width: 100%;
+    img{
+        float: left;
+    }
+    ol{
+        padding: 0%;
+    }
     li{
         list-style: none;
-        img{
-            float: left;
-            width: auto;
-            padding-right: 2%;
-        }
-        p{
-            display: block;
-        }
+        justify-content: center;
     }
+    p{
+        margin-left: 2%;
+    }
+}
+.pago{
+    justify-self: center;
+    padding-left: 5%;
+    .grid_pago{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5%;
+    }
+}
+.sociales{
+    padding-left: 15%;
+    .grid_sociales{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 5%;
+    }
+}
+.copy{
+    text-align: center;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+.suscripcion{
+    padding-top: 5%;
 }
